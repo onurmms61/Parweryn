@@ -1,26 +1,26 @@
 class Settings {
-  constructor(pause, 
+  constructor(pause,
     palladium, refresh, moveRandomly, killNpcs, fleeFromEnemy, avoidAttackedNpcs, circleNpc, dontCircleWhenHpBelow25Percent, reviveAtGate,
 
     bonusBox, materials, cargoBox, greenOrGoldBooty, redBooty, blueBooty, masqueBooty,
 
     alpha, beta, gamma, delta, epsilon, zeta, kappa, lambda, kronos, hades, kuiper,
 
-    lockNpcs, lockPlayers, autoAttack) 
+    lockNpcs, lockPlayers, autoAttack)
   {
     this._pause = pause === true;
 
     this._palladium = palladium === true;
     this._refresh = refresh === true;
     this._moveRandomly = moveRandomly === true;
-    this._killNpcs = killNpcs === true;    
+    this._killNpcs = killNpcs === true;
     this._fleeFromEnemy = fleeFromEnemy === true;
     this._avoidAttackedNpcs = avoidAttackedNpcs === true;
     this._circleNpc = circleNpc === true;
     this.npcCircleRadius = 500;
     this._dontCircleWhenHpBelow25Percent = dontCircleWhenHpBelow25Percent === true;
     this._reviveAtGate = reviveAtGate === true;
-    this.reviveLimit = 5;
+    this.reviveLimit = 10;
 
     this._bonusBox = bonusBox === true;
     this._materials = materials === true;
