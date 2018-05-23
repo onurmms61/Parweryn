@@ -3,7 +3,7 @@ class SafetyChecker {
     let jsCheck = JavaScriptChecker.safetyCheck();
 
     if (!jsCheck) {
-      return "GAME UPDATE - UNSAFE_JS";
+      return "OYUN GÜNCELEME - JS GÜVENSİZ";
     }
 
     return true;
