@@ -47,7 +47,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'avoidAttackedNpcs',
-        labelText: 'Avoid attacked NPCs<br>(Dont use with PET)',
+        labelText: 'Saldırıya uğrayan yaratıklardan kaçının<br>(PET ile kullanmayın)',
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.avoidAttackedNpcs = this.checked;
@@ -55,7 +55,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'npcCircle',
-        labelText: 'Circle',
+        labelText: 'Daire',
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.circleNpc = this.checked;
@@ -63,7 +63,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'npcCircleRadius',
-        labelText: 'Circle radius <span> (500px)</span>',
+        labelText: 'Daire yarıçapı <span> (500px)</span>',
         type: 'range',
         appendTo: this.botSettingsWindow,
         labelBefore: true,
@@ -80,7 +80,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'dontCircleWhenHpBelow25Percent',
-        labelText: "Don't circle when HP < 25%",
+        labelText: "Darbe Puanı 25% den küçük olduğunda daire çizmeyi bırak",
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.dontCircleWhenHpBelow25Percent = this.checked;
@@ -88,7 +88,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'repairWhenHpIsLowerThanPercent',
-        labelText: ' Repair when HP < <span> (10%)</span>',
+        labelText: ' Darbe Puanı <span> (10%)</span> altına düştüğünde tamir ol',
         type: 'range',
         appendTo: this.botSettingsWindow,
         labelBefore: true,
@@ -96,7 +96,7 @@ class GeneralSettingsWindow {
           min: 0,
           max: 100,
           step: 1,
-          value: 10,
+          value: 80,
         },
         event: function (ev) {
           window.settings.repairWhenHpIsLowerThanPercent = this.value;
@@ -105,7 +105,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'reviveAtGate',
-        labelText: 'Revive at the nearest gate',
+        labelText: 'En yakın kapıda tamir ol',
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.reviveAtGate = this.checked;
@@ -113,7 +113,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'reviveLimit',
-        labelText: 'Revive limit <span> (5)</span>',
+        labelText: 'Ölüm limiti <span> (5)</span>',
         type: 'range',
         appendTo: this.botSettingsWindow,
         labelBefore: true,
