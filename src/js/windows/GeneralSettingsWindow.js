@@ -2,12 +2,12 @@ class GeneralSettingsWindow {
   createWindow() {
     this.botSettingsWindow = WindowFactory.createWindow({
       width: 320,
-      text: "General"
+      text: "Genel"
     });
 
     let controls = [{
         name: 'palladium',
-        labelText: 'Palladium Bot',
+        labelText: 'Palladyum topla',
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.palladium = this.checked;
@@ -23,7 +23,7 @@ class GeneralSettingsWindow {
       },*/
       {
         name: 'moveRandomly',
-        labelText: 'Move randomly',
+        labelText: 'Rastgele hareket et',
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.moveRandomly = this.checked;
@@ -31,7 +31,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'npcKiller',
-        labelText: 'Kill NPCs',
+        labelText: 'Yaratıkları öldür',
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.killNpcs = this.checked;
@@ -39,7 +39,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'fleeFromEnemy',
-        labelText: 'Flee from enemy',
+        labelText: 'Düşmandan kaç',
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.fleeFromEnemy = this.checked;

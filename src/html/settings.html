@@ -9,48 +9,48 @@
 
 <body>
   <form>
-    <h4>Appearance</h4>
-    <label>Header color
+    <h4>Görünüm</h4>
+    <label>Üstbilgi rengi
       <input type="color" id="headerColor" value="#16262f">
     </label>
-    <label> | opacity
+    <label> | saydamlık
       <input type="range" id="headerOpacity" min="0" max="1" step="0.01" value="0.9">
     </label>
     <br>
-    <label>Window background color
+    <label>Pencere arka plan rengi
       <input type="color" id="windowColor" value="#16262f">
     </label>
-    <label> | opacity
+    <label> | saydamlık
       <input type="range" id="windowOpacity" min="0" max="1" step="0.01" value="0.8">
     </label>
     <br>
 
     <input type="checkbox" id="windowsToTabs" />
-    <label for="windowsToTabs">Tabs instead of windows</label>
+    <label for="windowsToTabs">Pencereler yerine sekmeler</label>
 
     <hr>
-    <h4>Advanced (beginners, go away!)</h4>
-    <label>Logic tick (ms)
+    <h4>Gelişmiş (bilmeyenler değiştirmesin!)</h4>
+    <label>Tıklama mantığı (ms)
       <input type="number" id="timerTick" min="50" max="20000" value="300">
     </label>
     <br>
     <hr>
-    <h4>Statistic window</h4>
+    <h4>İstatistik penceresi</h4>
     <input type="checkbox" id="showRuntime" />
-    <label for="showRuntime">Show runtime</label>
+    <label for="showRuntime">Çalışma zamanını göster</label>
     <br>
 
-    <h5>Speed format</h5>
+    <h5>Hız biçimi</h5>
     <input type="radio" id="speedFormat_min" name="speedFormat" value="min">
-    <label for="speedFormat_min">uri/min.</label>
+    <label for="speedFormat_min">uri/dak.</label>
     <br>
 
     <input type="radio" id="speedFormat_hour" name="speedFormat" value="hour" checked>
-    <label for="speedFormat_hour">uri/hour</label>
+    <label for="speedFormat_hour">uri/saat</label>
 
     <hr>
 
-    <input type="submit" value="save">
+    <input type="submit" value="kaydet">
   </form>
 
   <script src="/js/libs/jquery-3.2.1.min.js"></script>

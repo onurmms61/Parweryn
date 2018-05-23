@@ -2,12 +2,12 @@ class BoxSettingsWindow {
   createWindow() {
     this.boxSettingsWindow = WindowFactory.createWindow({
       width: 320,
-      text: "Box settings"
+      text: "Kutu ayarları"
     });
 
     let controls = [{
         name: 'bonusBox',
-        labelText: 'Bonus box',
+        labelText: 'Bonus kutusu',
         appendTo: this.boxSettingsWindow,
         event: function () {
           window.settings.bonusBox = this.checked;
@@ -15,7 +15,7 @@ class BoxSettingsWindow {
       },
       {
         name: 'materials',
-        labelText: 'Materials',
+        labelText: 'Malzemeler',
         appendTo: this.boxSettingsWindow,
         event: function () {
           window.settings.materials = this.checked;
@@ -23,7 +23,7 @@ class BoxSettingsWindow {
       },
       {
         name: 'cargoBox',
-        labelText: 'Cargo box',
+        labelText: 'Kargo kutusu',
         appendTo: this.boxSettingsWindow,
         event: function () {
           window.settings.cargoBox = this.checked;
@@ -31,7 +31,7 @@ class BoxSettingsWindow {
       },
       {
         name: 'greenOrGoldBooty',
-        labelText: 'Green | Gold booty boxes',
+        labelText: 'Yeşil | Altın ganimet kutuları',
         appendTo: this.boxSettingsWindow,
         event: function () {
           window.settings.greenOrGoldBooty = this.checked;
@@ -39,7 +39,7 @@ class BoxSettingsWindow {
       },
       {
         name: 'redBooty',
-        labelText: 'Red booty boxes',
+        labelText: 'Kırmızı ganimet kutuları',
         appendTo: this.boxSettingsWindow,
         event: function () {
           window.settings.redBooty = this.checked;
@@ -47,7 +47,7 @@ class BoxSettingsWindow {
       },
       {
         name: 'blueBooty',
-        labelText: 'Blue booty boxes',
+        labelText: 'Mavi ganimet kutuları',
         appendTo: this.boxSettingsWindow,
         event: function () {
           window.settings.blueBooty = this.checked;
@@ -55,7 +55,7 @@ class BoxSettingsWindow {
       },
       {
         name: 'masqueBooty',
-        labelText: 'Apocalyptic booty boxes',
+        labelText: 'Apocalypse ganimet kutuları',
         appendTo: this.boxSettingsWindow,
         event: function () {
           window.settings.masqueBooty = this.checked;

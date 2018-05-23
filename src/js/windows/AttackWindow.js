@@ -2,17 +2,17 @@ class AttackWindow {
   createWindow() {
     this.attackWindow = WindowFactory.createWindow({
       width: 320,
-      text: "Attack Details"
+      text: "Saldırı Detayları"
     });
 
     this.targetNameTxt = jQuery("<h4>");
-    this.targetNameTxt.text("Target: -");
+    this.targetNameTxt.text("Hedef: -");
 
     this.hpTxt = jQuery("<h4>");
-    this.hpTxt.text("HP: -");
+    this.hpTxt.text("Darbe Puanı: -");
 
     this.shdTxt = jQuery("<h4>");
-    this.shdTxt.text("SHD: -");
+    this.shdTxt.text("Kalkan: -");
 
     this.targetNameTxt.appendTo(this.attackWindow);
     this.hpTxt.appendTo(this.attackWindow);
@@ -20,20 +20,20 @@ class AttackWindow {
   }
 
   removeTarget() {
-    this.targetName.text("Target: -");
-    this.hpTxt.text("HP: -");
-    this.shdTxt.text("SHD: -");
+    this.targetName.text("Hedef: -");
+    this.hpTxt.text("Darbe Puanı: -");
+    this.shdTxt.text("Kalkan: -");
   }
 
   targetName(value) {
-    this.targetNameTxt.text("Target: " + value);
+    this.targetNameTxt.text("Hedef: " + value);
   }
 
   hp(value) {
-    this.hpTxt.text("HP: " + value);
+    this.hpTxt.text("Darbe Puanı: " + value);
   }
 
   shd(value) {
-    this.shdTxt.text("SHD: " + value);
+    this.shdTxt.text("Kalkan: " + value);
   }
 }

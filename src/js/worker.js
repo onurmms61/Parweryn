@@ -22,12 +22,12 @@ $(document).ready(function () {
       textAlign: "center"
     });
 
-    jQuery("<h1>").text("The tool detected changes in the game.").appendTo(warning);
-    jQuery("<h2>").text("Loading stopped! Your account has to stay safe.").appendTo(warning);
-    jQuery("<h3>").text("Reason: " + check).appendTo(warning);
+    jQuery("<h1>").text("Toshinou oyunda değişiklikler tespit etti.").appendTo(warning);
+    jQuery("<h2>").text("Hesabınızın güvenliği için yükleme durduruldu.").appendTo(warning);
+    jQuery("<h3>").text("Sebep: " + check).appendTo(warning);
 
     warning.appendTo("body");
-    throw new Error("Safety tests failed!");
+    throw new Error("Güvenlik testleri başarısız!");
   }
 
   preloader.appendTo($("#container"));
@@ -161,14 +161,14 @@ function logic() {
   let circleBox = null;
   let palladiumBlackList = [
     "-=[ Battleray ]=-",
-    "( Uber Annihilator )", 
-    "( Uber Saboteur )", 
+    "( Uber Annihilator )",
+    "( Uber Saboteur )",
     "( Uber Barracuda )",
   ];
-  
+
   if (window.hero.id == 73704408 || window.hero.id == 71224317 || window.hero.id == 167910851) {
     return;
-  }  
+  }
 
   if (api.isDisconnected) {
     if (window.fleeingFromEnemy) {
@@ -421,4 +421,3 @@ function logic() {
   }
   window.dispatchEvent(new CustomEvent("logicEnd"));
 }
-

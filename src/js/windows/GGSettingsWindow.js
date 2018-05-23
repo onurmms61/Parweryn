@@ -2,12 +2,12 @@ class GGSettingsWindow {
   createWindow() {
     this.GGSettingsWindow = WindowFactory.createWindow({
       width: 320,
-      text: "GG Helper"
+      text: "GG Yardımcısı"
     });
 
     let controls = [{
         name: 'alpha',
-        labelText: 'Jump in GG Alpha',
+        labelText: 'Alpha Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.alpha = this.checked;
@@ -15,7 +15,7 @@ class GGSettingsWindow {
       },
       {
         name: 'beta',
-        labelText: 'Jump in GG Beta',
+        labelText: 'Beta Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.beta = this.checked;
@@ -23,7 +23,7 @@ class GGSettingsWindow {
       },
       {
         name: 'gamma',
-        labelText: 'Jump in GG Gamma',
+        labelText: 'Gamma Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.gamma = this.checked;
@@ -31,7 +31,7 @@ class GGSettingsWindow {
       },
       {
         name: 'delta',
-        labelText: 'Jump in GG Delta',
+        labelText: 'Delta Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.delta = this.checked;
@@ -39,7 +39,7 @@ class GGSettingsWindow {
       },
       {
         name: 'epsilon',
-        labelText: 'Jump in GG Epsilon',
+        labelText: 'Epsilon Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.epsilon = this.checked;
@@ -47,7 +47,7 @@ class GGSettingsWindow {
       },
       {
         name: 'zeta',
-        labelText: 'Jump in GG Zeta',
+        labelText: 'Zeta Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.zeta = this.checked;
@@ -55,7 +55,7 @@ class GGSettingsWindow {
       },
       {
         name: 'kappa',
-        labelText: 'Jump in GG Kappa',
+        labelText: 'Kappa Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.kappa = this.checked;
@@ -63,7 +63,7 @@ class GGSettingsWindow {
       },
       {
         name: 'lambda',
-        labelText: 'Jump in GG Lambda',
+        labelText: 'Lambda Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.lambda = this.checked;
@@ -71,7 +71,7 @@ class GGSettingsWindow {
       },
       {
         name: 'kronos',
-        labelText: 'Jump in GG Kronos',
+        labelText: 'Kronos Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.kronos = this.checked;
@@ -79,7 +79,7 @@ class GGSettingsWindow {
       },
       {
         name: 'hades',
-        labelText: 'Jump in GG Hades',
+        labelText: 'Hades Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.hades = this.checked;
@@ -87,7 +87,7 @@ class GGSettingsWindow {
       },
       {
         name: 'kuiper',
-        labelText: 'Jump in GG Kuiper',
+        labelText: 'Kuiper Galaksi Kapısına Atla',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.kuiper = this.checked;
