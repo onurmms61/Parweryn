@@ -3,7 +3,7 @@ class NpcSettingsWindow {
     this.npcSettingsWindow = WindowFactory.createWindow({
       width: 320,
       maxHeight: 300,
-      text: "Yaratıkları saldırıdan hariç tut"
+      text: "Yaratıkları Saldırıdan Hariç Tut"
     });
 
     let controls = [];

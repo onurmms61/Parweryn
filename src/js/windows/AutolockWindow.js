@@ -2,7 +2,7 @@ class AutolockWindow {
   createWindow() {
     this.autolockWindow = WindowFactory.createWindow({
       width: 320,
-      text: "Otomatik kilitlenme"
+      text: "Otomatik Kilitlenme"
     });
 
     let options = [{

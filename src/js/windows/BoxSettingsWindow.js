@@ -2,7 +2,7 @@ class BoxSettingsWindow {
   createWindow() {
     this.boxSettingsWindow = WindowFactory.createWindow({
       width: 320,
-      text: "Kutu ayarları"
+      text: "Kutu Ayarları"
     });
 
     let controls = [{
