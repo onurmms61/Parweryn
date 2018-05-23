@@ -104,7 +104,7 @@ function init() {
     let key = e.key;
 
     if (key == "x" || key == "z") {
-      let maxDist = 1000;
+      let maxDist = 5000;
       let finDist = 1000000;
       let finalShip;
 
