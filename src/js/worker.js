@@ -99,6 +99,7 @@ function init() {
 
   window.setInterval(logic, window.tickTime);
 
+  window.settings.pause = true;
 
   $(document).keyup(function (e) {
     let key = e.key;
@@ -126,10 +127,19 @@ function init() {
           api.attacking = true;
         }
       }
+    } else if (key == "p") {
+      if (!window.settings.pause) {
+        $('.cnt_btn_play .btn_play').html("Play").removeClass('in_stop').addClass('in_play');
+        api.resetTarget("all");
+        window.fleeingFromEnemy = false;
+        window.settings.pause = true;
+      } else {
+        $('.cnt_btn_play .btn_play').html("Stop").removeClass('in_play').addClass('in_stop');
+        window.settings.pause = false;
+      }
     }
   });
 
-  window.settings.pause = true;
   $(document).on('click', '.cnt_minimize_window', () => {
     if (window.statusMiniWindow) {
       window.mainWindow.slideUp();
