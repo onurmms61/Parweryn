@@ -2,12 +2,20 @@ class GGSettingsWindow {
   createWindow() {
     this.GGSettingsWindow = WindowFactory.createWindow({
       width: 320,
-      text: "GG Yardımcısı"
+      text: chrome.i18n.getMessage("gghelper")
     });
 
     let controls = [{
+        name: 'ggbot',
+        labelText: chrome.i18n.getMessage("ggbot"),
+        appendTo: this.GGSettingsWindow,
+        event: function () {
+          window.settings.ggbot = this.checked;
+        }
+	  }
+     ,{
         name: 'alpha',
-        labelText: 'Alpha Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Alpha',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.alpha = this.checked;
@@ -15,7 +23,7 @@ class GGSettingsWindow {
       },
       {
         name: 'beta',
-        labelText: 'Beta Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Beta',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.beta = this.checked;
@@ -23,7 +31,7 @@ class GGSettingsWindow {
       },
       {
         name: 'gamma',
-        labelText: 'Gamma Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Gamma',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.gamma = this.checked;
@@ -31,7 +39,7 @@ class GGSettingsWindow {
       },
       {
         name: 'delta',
-        labelText: 'Delta Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Delta',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.delta = this.checked;
@@ -39,7 +47,7 @@ class GGSettingsWindow {
       },
       {
         name: 'epsilon',
-        labelText: 'Epsilon Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Epsilon',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.epsilon = this.checked;
@@ -47,7 +55,7 @@ class GGSettingsWindow {
       },
       {
         name: 'zeta',
-        labelText: 'Zeta Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Zeta',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.zeta = this.checked;
@@ -55,7 +63,7 @@ class GGSettingsWindow {
       },
       {
         name: 'kappa',
-        labelText: 'Kappa Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Kappa',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.kappa = this.checked;
@@ -63,7 +71,7 @@ class GGSettingsWindow {
       },
       {
         name: 'lambda',
-        labelText: 'Lambda Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Lambda',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.lambda = this.checked;
@@ -71,7 +79,7 @@ class GGSettingsWindow {
       },
       {
         name: 'kronos',
-        labelText: 'Kronos Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Kronos',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.kronos = this.checked;
@@ -79,7 +87,7 @@ class GGSettingsWindow {
       },
       {
         name: 'hades',
-        labelText: 'Hades Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Hades',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.hades = this.checked;
@@ -87,7 +95,7 @@ class GGSettingsWindow {
       },
       {
         name: 'kuiper',
-        labelText: 'Kuiper Galaksi Kapısına Atla',
+        labelText: chrome.i18n.getMessage("jumpin")+' GG Kuiper',
         appendTo: this.GGSettingsWindow,
         event: function () {
           window.settings.kuiper = this.checked;

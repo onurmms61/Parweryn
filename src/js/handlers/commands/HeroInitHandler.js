@@ -1,6 +1,6 @@
 class HeroInitHandler {
   static get ID() {
-    return 24873;
+    return 20480;
   }
 
   constructor(f) {
@@ -15,16 +15,14 @@ class HeroInitHandler {
       Injector.injectScript("window.heroDied = false;");
 
       let heroJson = JSON.parse(e.detail);
-
       if (window.hero == null) {
         window.hero = new Hero(heroJson.x, heroJson.y, heroJson.factionId, heroJson.userId, heroJson.mapId);
       }
-
       window.hero.maxHp = heroJson[Variables.heroInitMaxHp];
       window.hero.hp = heroJson[Variables.heroInitHp];
-      window.hero.maxShd = heroJson[Variables.heroInitMaxShd];
+      window.hero.maxShd = heroJson[Variables.heroInitMaxShd]; // _-B2O
       window.hero.shd = heroJson["shield"];
-      window.hero.mapId = heroJson["mapId"]
+      window.hero.mapId = heroJson["mapId"];
 
       if (window.hero.mapId == 16 || window.hero.mapId == 29 || window.hero.mapId == 91 || window.hero.mapId == 93) {
         window.b1 = 42000 / 300;
@@ -53,3 +51,4 @@ class HeroInitHandler {
     return this._handler;
   }
 }
+

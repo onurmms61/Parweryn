@@ -1,0 +1,254 @@
+{
+  "toshidescription": {
+    "message": "A cheat/tool/bot/whatever dla gry przegladarkowej DarkOrbit. Robi całkiem fajne rzeczy i jest wciaż w trakcie intensywnego rozwoju.",
+    "description": "Opis Toshinou"
+  },
+  "desextension": {
+    "message": "Bot dla DarkOrbit, stworzony przez Freshek.",
+    "description": "Opis Rozszerzen Toshinou"
+  },
+  "appearance": {
+    "message": "Wygląd"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Opis rozszerzenia Toshinou"
+  },
+  "discordserver": {
+    "message": "Serwer Discord "
+  },
+  "saveall": {
+    "message": "Zapisz wszystko"
+  },
+  "headercolor": {
+    "message": "Kolor nagłowka"
+  },
+  "opacity": {
+    "message": "nieprzezroczystość"
+  },
+  "windowbackgroundcolor": {
+    "message": "Kolor Tła okna"
+  },
+  "statisticwindow": {
+    "message": "Okno statystyczne"
+  },
+  "windowstotabs": {
+    "message": "Tabulatory zamiast okien"
+  },
+  "showruntime": {
+    "message": "pokaz czas trwania"
+  },
+  "speedformat": {
+    "message": "Format szybkości"
+  },
+  "hour": {
+    "message": "godzina"
+  },
+  "min": {
+    "message": "min"
+  },
+  "deltaoptions": {
+    "message": "Włącz Funkcje Delty. Może miec pare bugów bugs"
+  },
+  "palladiumlogic": {
+    "message": "Palladium logic (Dziala tylko jeśli delta i palladium bot są aktywne)"
+  },
+  "shipconfigs": {
+    "message": "konfy statku"
+  },
+  "attackconfig": {
+    "message": "konffa do ataku:"
+  },
+  "flyingconfig": {
+    "message": "konfa do latania:"
+  },
+  "advanced": {
+    "message": "Zaawansowane (Nie dla początkujących!)"
+  },
+  "logictick": {
+    "message": "Logic tick (ms)"
+  },
+  "refreshsettings": {
+    "message": "Odśwież strone ustawienia Funkcji"
+  },
+  "enablerefresh": {
+    "message": "Włączz funkcje odświerzania"
+  },
+  "refreshtime": {
+    "message": "Refresh interval (min)"
+  },
+  "enablenpcblocklist": {
+    "message": "Include npc black list into refresh page function"
+  },
+  "refreshtoreconnect": {
+    "message": "Refresh page when disconnected"
+  },
+  "clearsettings": {
+    "message": "Clear settings storage (Refresh function)"
+  },
+  "reviveat": {
+    "message": "Revive at"
+  },
+  "base": {
+    "message": "Base"
+  },
+  "gate": {
+    "message": "Gate"
+  },
+  "spot": {
+    "message": "Spot"
+  },
+  "norevive": {
+    "message": "No revive"
+  },
+  "revivelimit": {
+    "message": "Revive limit"
+  },
+  "workmap": {
+    "message": "Work Map"
+  },
+  "any": {
+    "message": "Any"
+  },
+  "onlyworkdelta": {
+    "message": "(Only works if delta active)"
+  },
+  "boxsettings": {
+    "message": "ustawienia skrzynek"
+  },
+  "bonusbox": {
+    "message": "Bonus box"
+  },
+  "materials": {
+    "message": "Materiały"
+  },
+  "cargobox": {
+    "message": "boxy"
+  },
+  "greenorgoldbooty": {
+    "message": "Złote | Zielone Skrzynie pirackie"
+  },
+  "redbooty": {
+    "message": "Czerwone Skrzynie pirackie"
+  },
+  "bluebooty": {
+    "message": "Niebieskie Skrzynie pirackie"
+  },
+  "masquebooty": {
+    "message": " Skrzynie Apokalipsy"
+  },
+  "collectboxwhencircle": {
+    "message": "Zbieraj Boxy Box robiąc okrązenia (jeli delta jest aktywna)"
+  },
+  "target": {
+    "message": "Cel: "
+  },
+  "hp": {
+    "message": "HP: "
+  },
+  "shd": {
+    "message": "SHD: "
+  },
+  "palladiumbot": {
+    "message": "Palladium Bot"
+  },
+  "moverandomly": {
+    "message": "Ruszaj Randomowo"
+  },
+  "killnpcs": {
+    "message": "Zabijaj NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Uciekaj od wrogów"
+  },
+  "avoidattackednpc": {
+    "message": "Nie Bij czyjegoś NPCs<br>(Nie uzywac z PET'EM)"
+  },
+  "circle": {
+    "message": "Krąz"
+  },
+  "circleradius": {
+    "message": "Promień krążenia <span> (500px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Nie Krąż gdy HP jest mniej niż < 25%"
+  },
+  "repairwhenhp": {
+    "message": "Napraw gdy HP spadnie poniżej< <span> (10%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Skocz i wróć"
+  },
+  "autochangeconfig": {
+    "message": "Auto zmiana konfy"
+  },
+  "dodgethecbs": {
+    "message": "bron sie przed CBS"
+  },
+  "resettarget": {
+    "message": "Resetuj target gdy HP jest mniej niż < 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Zapisz ustawienia & Włacz odswieżanie"
+  },
+  "attackdetails": {
+    "message": "Szczegóły ataku"
+  },
+  "general": {
+    "message": "General"
+  },
+  "gghelper": {
+    "message": "GG Helper"
+  },
+  "ggbot": {
+    "message": "GG Bot (W Testach)"
+  },
+  "jumpin": {
+    "message": "Skocz w"
+  },
+  "minimap": {
+    "message": "Minimapa"
+  },
+  "excludenpcto": {
+    "message": "Zaznacz NPC do nie bicia"
+  },
+  "statistic": {
+    "message": "Statystyki"
+  },
+  "startat": {
+    "message": "Zaczęto o: "
+  },
+  "credits": {
+    "message": "Kredki: "
+  },
+  "uridium": {
+    "message": "Urka: "
+  },
+  "ggenergy": {
+    "message": "|Kliki: "
+  },
+  "ammo": {
+    "message": "Ammo: "
+  },
+  "experiencie": {
+    "message": "Doświadczenie: "
+  },
+  "honor": {
+    "message": "Poważka: "
+  },
+  "rank": {
+    "message": "Punkty Rangi: "
+  },
+  "death": {
+    "message": "Ilośc Zgonów: "
+  },
+  "speed": {
+    "message": "Szybkość: "
+  },
+  "runtime": {
+    "message": "CZas trwania: "
+  },
+  "reset": {
+    "message": "Reset"
+  }
+}

@@ -1,12 +1,11 @@
 class ShipMoveHandler {
   static get ID() {
-    return 3110;
+    return 2568;//3846;
   }
 
   constructor() {
     this._handler = function (e, a) {
       let shipMoveCmd = JSON.parse(e.detail);
-
       let ship = a.ships[shipMoveCmd.userId];
 
       if (ship != null)

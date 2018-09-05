@@ -1,0 +1,254 @@
+﻿{
+  "toshidescription": {
+    "message": "Um cheat/ferramenta/bot para um site flash game chamado DarkOrbit. Ele faz algumas coisas bem legais e ainda est sob forte desenvolvimento.",
+    "description": "descrio do Toshinou"
+  },
+  "desextension": {
+    "message": "Bot para DarkOrbit, criado por Freshek.",
+    "description": "Toshinou Extension description"
+  },
+  "appearance": {
+    "message": "Aparncia"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Toshinou Extension description"
+  },
+  "discordserver": {
+    "message": "Servidor Discord"
+  },
+  "saveall": {
+    "message": "Salvar tudo"
+  },
+  "headercolor": {
+    "message": "Cor do titulo"
+  },
+  "opacity": {
+    "message": "opacidade"
+  },
+  "windowbackgroundcolor": {
+    "message": "Cor do fundo da janela"
+  },
+  "statisticwindow": {
+    "message": "Estatsticas da Janela"
+  },
+  "windowstotabs": {
+    "message": "Guias em vez de janelas"
+  },
+  "showruntime": {
+    "message": "Mostrar tempo de execuo"
+  },
+  "speedformat": {
+    "message": "Formato de velocidade"
+  },
+  "hour": {
+    "message": "hora"
+  },
+  "min": {
+    "message": "minutos"
+  },
+  "deltaoptions": {
+    "message": "Ativar funes delta. Alguns podem ter erros"
+  },
+  "palladiumlogic": {
+    "message": "Lgica do palladium (funciona apenas se o delta e o palladium bot estiverem ativos)"
+  },
+  "shipconfigs": {
+    "message": "Configuraes da nave"
+  },
+  "attackconfig": {
+    "message": "Configurao de ataque:"
+  },
+  "flyingconfig": {
+    "message": "Configurao de correr:"
+  },
+  "advanced": {
+    "message": "Avanado (iniciantes, v embora!)"
+  },
+  "logictick": {
+    "message": "Logica de tick (ms)"
+  },
+  "refreshsettings": {
+    "message": "Atualize as configuraes das funes da pgina"
+  },
+  "enablerefresh": {
+    "message": "Ativar funo de atualizao"
+  },
+  "refreshtime": {
+    "message": "Intervalo de atualizao (minutos)"
+  },
+  "enablenpcblocklist": {
+    "message": "Incluir lista negra do npc na funo de atualizao da página"
+  },
+  "refreshtoreconnect": {
+    "message": "Atualizar a página quando for disconectado."
+  },
+  "clearsettings": {
+    "message": "Limpar armazenamento de configurações (Funo de atualizao)"
+  },
+  "reviveat": {
+    "message": "Reviver em"
+  },
+  "base": {
+    "message": "Base"
+  },
+  "gate": {
+    "message": "Portal"
+  },
+  "spot": {
+    "message": "Local"
+  },
+  "norevive": {
+    "message": "No reviver"
+  },
+  "revivelimit": {
+    "message": "Limite de reviver"
+  },
+  "workmap": {
+    "message": "Mapa de trabalho"
+  },
+  "any": {
+    "message": "Qualquer"
+  },
+  "onlyworkdelta": {
+    "message": "(S funciona se delta ativo)"
+  },
+  "boxsettings": {
+    "message": "configuraes de box"
+  },
+  "bonusbox": {
+    "message": "Bonus box"
+  },
+  "materials": {
+    "message": "Materiais"
+  },
+  "cargobox": {
+    "message": "Cargo box"
+  },
+  "greenorgoldbooty": {
+    "message": "Caixas Verde | Caixas Douradas"
+  },
+  "redbooty": {
+    "message": "Caixas vermelhas"
+  },
+  "bluebooty": {
+    "message": "Caixas azuis"
+  },
+  "masquebooty": {
+    "message": "Caixas Apocalipse"
+  },
+  "collectboxwhencircle": {
+    "message": "Collect Box When Circle (Se delta ativo)"
+  },
+  "target": {
+    "message": "Alvo: "
+  },
+  "hp": {
+    "message": "Vida: "
+  },
+  "shd": {
+    "message": "Escudo: "
+  },
+  "palladiumbot": {
+    "message": "Palladium Bot"
+  },
+  "moverandomly": {
+    "message": "Mover aleatoriamente"
+  },
+  "killnpcs": {
+    "message": "Matar NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Fuja do inimigo"
+  },
+  "avoidattackednpc": {
+    "message": "Evite NPCs atacados <br> (no use com PET)"
+  },
+  "circle": {
+    "message": "Circulo"
+  },
+  "circleradius": {
+    "message": "Raio do crculo <span> (500px) </ span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "No circule quando a Vida <25%"
+  },
+  "repairwhenhp": {
+    "message": "Reparar quando a Vida <<span> (10%) </ span>"
+  },
+  "jumpandreturn": {
+    "message": "Saltar e retornar"
+  },
+  "autochangeconfig": {
+    "message": "Trocar automaticamente de configurao"
+  },
+  "dodgethecbs": {
+    "message": "Esquivar-se das Bases"
+  },
+  "resettarget": {
+    "message": "Redefinir alvo quando a HP <25%"
+  },
+  "savesettingsandenable": {
+    "message": "Salvar configuraes e Ativar atualizao"
+  },
+  "attackdetails": {
+    "message": "Detalhes do ataque"
+  },
+  "general": {
+    "message": "Geral"
+  },
+  "gghelper": {
+    "message": "Ajudante de GG"
+  },
+  "ggbot": {
+    "message": "GG Bot (Testando)"
+  },
+  "jumpin": {
+    "message": "Pular em"
+  },
+  "minimap": {
+    "message": "Minimapa"
+  },
+  "excludenpcto": {
+    "message": "Excluir NPC para atacar"
+  },
+  "statistic": {
+    "message": "Estatsticas"
+  },
+  "startat": {
+    "message": "Comea s: "
+  },
+  "credits": {
+    "message": "Crditos: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "Energia Extra: "
+  },
+  "ammo": {
+    "message": "Munio: "
+  },
+  "experiencie": {
+    "message": "Experincia: "
+  },
+  "honor": {
+    "message": "Honra: "
+  },
+  "rank": {
+    "message": "Pontos de rank: "
+  },
+  "death": {
+    "message": "Contagem de mortes: "
+  },
+  "speed": {
+    "message": "Velocidade: "
+  },
+  "runtime": {
+    "message": "Tempo de execuo: "
+  },
+  "reset": {
+    "message": "Resetar"
+  }
+}

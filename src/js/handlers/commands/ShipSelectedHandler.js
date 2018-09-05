@@ -1,6 +1,6 @@
 class ShipSelectedHandler {
   static get ID() {
-    return 29095;
+    return 13233;//32473;
   }
 
   constructor() {
@@ -8,10 +8,9 @@ class ShipSelectedHandler {
       let parsedJson = JSON.parse(e.detail);
 
       let ship = a.ships[parsedJson.userId];
-
-      ship.maxHp = parsedJson[Variables.selectMaxHp];
-      ship.maxShd = parsedJson[Variables.selectMaxShd];
-      ship.hp = parsedJson[Variables.selectHp];
+      ship.maxHp = parsedJson[Variables.selectMaxHp]; //
+      ship.maxShd = parsedJson[Variables.selectMaxShd]; // 
+      ship.hp = parsedJson[Variables.selectHp];//_-p2W 
       ship.shd = parsedJson.shield;
 
       if (ship != null)

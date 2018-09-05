@@ -1,0 +1,253 @@
+﻿{
+  "toshidescription": {
+    "message": "Un cheat/strumento/bot/e altro per un sito flash game chiamato DarkOrbit. Questo fa meravigliose cose ed è ancora in grande via di sviluppo.",
+    "description": "Toshinou description"
+  },
+  "desextension": {
+    "message": "Bot for DarkOrbit, creato da Freshek.",
+    "description": "Toshinou Extension description"
+  },
+  "appearance": {
+    "message": "Apparenza"
+  },
+  "translateby": {
+    "message": "Tradotto da IT | fede"
+  },
+  "discordserver": {
+    "message": "Server Discord"
+  },
+  "saveall": {
+    "message": "Salva tutto"
+  },
+  "headercolor": {
+    "message": "Colore titolo"
+  },
+  "opacity": {
+    "message": "opacità"
+  },
+  "windowbackgroundcolor": {
+    "message": "Colore di sfondo della finestra"
+  },
+  "statisticwindow": {
+    "message": "Finestra statica"
+  },
+  "windowstotabs": {
+    "message": "Linguette invece della finestra"
+  },
+  "showruntime": {
+    "message": "Mostra tempo trascorso"
+  },
+  "speedformat": {
+    "message": "Velocità formato"
+  },
+  "hour": {
+    "message": "ore"
+  },
+  "min": {
+    "message": "min"
+  },
+  "deltaoptions": {
+    "message": "Abilita funzioni delta. Alcune posso funzionare male o non funzionare"
+  },
+  "palladiumlogic": {
+    "message": "Logica per Palladio (Funziona solo se delta e bot palladio sono attivi)"
+  },
+  "shipconfigs": {
+    "message": "Configurazioni nave"
+  },
+  "attackconfig": {
+    "message": "Configurazione d'attacco:"
+  },
+  "flyingconfig": {
+    "message": "Configurazione per scappare:"
+  },
+  "advanced": {
+    "message": "Avanzato (principianti, andate via!)"
+  },
+  "logictick": {
+    "message": "Tick logici (ms)"
+  },
+  "refreshsettings": {
+    "message": "Impostazioni per aggiornare la pagina"
+  },
+  "enablerefresh": {
+    "message": "Abilita aggiornamento della pagina"
+  },
+  "refreshtime": {
+    "message": "Intervallo per aggiornare la pagina (min)"
+  },
+  "enablenpcblocklist": {
+    "message": "Includi npc della lista nera nella funzione per aggiornare la pagina"
+  },
+  "refreshtoreconnect": {
+    "message": "Refresh page when disconnected"
+  },
+  "clearsettings": {
+    "message": "Azzera impostazioni salvate (aggiornamento pagina)"
+  },
+  "reviveat": {
+    "message": "Rivivi a"
+  },
+  "base": {
+    "message": "Base"
+  },
+  "gate": {
+    "message": "Portale"
+  },
+  "spot": {
+    "message": "Sul posto di morte"
+  },
+  "norevive": {
+    "message": "Non rianimare"
+  },
+  "revivelimit": {
+    "message": "numero rianimazioni"
+  },
+  "workmap": {
+    "message": "Mappa su cui usare il bot"
+  },
+  "any": {
+    "message": "Qualsiasi"
+  },
+  "onlyworkdelta": {
+    "message": "(Funziona solo se la funzione delta è attiva)"
+  },
+  "boxsettings": {
+    "message": "Impostazione box"
+  },
+  "bonusbox": {
+    "message": "Bonus box"
+  },
+  "materials": {
+    "message": "Materiali"
+  },
+  "cargobox": {
+    "message": "box cargo"
+  },
+  "greenorgoldbooty": {
+    "message": "Forzieri Verdi | Oro "
+  },
+  "redbooty": {
+    "message": "Forzieri rossi"
+  },
+  "bluebooty": {
+    "message": "Forzieri blu"
+  },
+  "masquebooty": {
+    "message": "Forzieri apocalittici"
+  },
+  "collectboxwhencircle": {
+    "message": "Colleziona Box quando circola (Se opzione delta attiva)"
+  },
+  "target": {
+    "message": "Bersaglio: "
+  },
+  "hp": {
+    "message": "PV: "
+  },
+  "shd": {
+    "message": "SHD: "
+  },
+  "palladiumbot": {
+    "message": "Bot Palladio"
+  },
+  "moverandomly": {
+    "message": "Muove casualmente"
+  },
+  "killnpcs": {
+    "message": "Uccidi NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Scappa dai nemici"
+  },
+  "avoidattackednpc": {
+    "message": "Evita NPCs sotto attacco <br>(Dont use with PET)"
+  },
+  "circle": {
+    "message": "Circola attorno"
+  },
+  "circleradius": {
+    "message": "Raggio cerchio <span> (500px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Non circolare quando PV < 25%"
+  },
+  "repairwhenhp": {
+    "message": "Ripara quando pv < <span> (10%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Salta e Ritorna"
+  },
+  "autochangeconfig": {
+    "message": "Cambia automaticamente configurazione"
+  },
+  "dodgethecbs": {
+    "message": "Schiva basi nemiche"
+  },
+  "resettarget": {
+    "message": "Cambia bersaglio quando PV < 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Salva impostazioni & attiva aggiornamento"
+  },
+  "attackdetails": {
+    "message": "Dettagli attacco"
+  },
+  "general": {
+    "message": "Generale"
+  },
+  "gghelper": {
+    "message": "Aiuto portali"
+  },
+  "ggbot": {
+    "message": "Bot portali (prova)"
+  },
+  "jumpin": {
+    "message": "Entra nel"
+  },
+  "minimap": {
+    "message": "Minimappa"
+  },
+  "excludenpcto": {
+    "message": "Escludi NPC da attaccare"
+  },
+  "statistic": {
+    "message": "Statistiche"
+  },
+  "startat": {
+    "message": "Inizia alle: "
+  },
+  "credits": {
+    "message": "Crediti: "
+  },
+  "uridium": {
+    "message": "Uridio "
+  },
+  "ggenergy": {
+    "message": "Energia portale: "
+  },
+  "ammo": {
+    "message": "Munizioni: "
+  },
+  "experiencie": {
+    "message": "Esperienza: "
+  },
+  "honor": {
+    "message": "onore: "
+  },
+  "rank": {
+    "message": "Punti classifica: "
+  },
+  "death": {
+    "message": "Numero morti: "
+  },
+  "speed": {
+    "message": "Velocità; "
+  },
+  "runtime": {
+    "message": "Usato: "
+  },
+  "reset": {
+    "message": "Resetta"
+  }
+}

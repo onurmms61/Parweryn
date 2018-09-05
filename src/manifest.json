@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Toshinou || Parweryn",
-  "version": "1.0",
-
-  "description": "DarkOrbit için Hile & Aracı",
+  "name": "Toshinou Revamped Delta",
+  "version": "0.19",
+  "default_locale": "en",
+  "description": "__MSG_desextension__",
 
   "content_scripts": [
     {
@@ -24,6 +24,7 @@
         "js/preferences/GlobalSettings.js",
         "js/utils/math/Vector2D.js",
         "js/utils/math/MathUtils.js",
+        "js/utils/math/graph.js",
         "js/utils/WebClient.js",
         "js/utils/BoxType.js",
         "js/utils/ColorConverter.js",
@@ -32,16 +33,18 @@
         "js/windows/Minimap.js",
         "js/windows/AttackWindow.js",
         "js/windows/GeneralSettingsWindow.js",
-        "js/windows/BoxSettingsWindow.js",
         "js/windows/GGSettingsWindow.js",
-        "js/windows/AutolockWindow.js",
         "js/windows/NpcSettingsWindow.js",
+		"js/windows/AutolockWindow.js",
+		"js/windows/psysWindow.js",
         "js/windows/StatisticWindow.js",
         "js/objects/Movable.js",
         "js/objects/Box.js",
         "js/objects/Hero.js",
         "js/objects/Ship.js",
         "js/objects/Gate.js",
+        "js/objects/Portal.js",
+        "js/objects/Map.js",
         "js/objects/CBS/Battlestation.js",
         "js/objects/CBS/BattlestationModule.js",
         "js/handlers/HandlersManager.js",
@@ -85,7 +88,7 @@
 
   "options_ui": {
     "page": "html/settings.html",
-    "open_in_tab": false
+    "open_in_tab": true
   },
 
   "permissions": [

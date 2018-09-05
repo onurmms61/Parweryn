@@ -1,0 +1,254 @@
+﻿{
+  "toshidescription": {
+    "message": "Una ventaja/herramienta/bot/lo que sea para un juego de navegador llamado DarkOrbit. Hace algunas cosas bastante bien y todavía está bajo un duro desarrollo.",
+    "description": "Descripción de Toshinou"
+  },
+  "desextension": {
+    "message": "Bot para DarkOrbit, creado por Freshek.",
+    "description": "Descripción de la Extención Toshinou"
+  },
+  "appearance": {
+    "message": "Apariencia"
+  },
+  "translateby": {
+    "message": "Traducido por MauThunder",
+    "description": "Descripción de la Extención Toshinou"
+  },
+  "discordserver": {
+    "message": "Servidor de Discord"
+  },
+  "saveall": {
+    "message": "Guardar Todo"
+  },
+  "headercolor": {
+    "message": "Color de Encabezado"
+  },
+  "opacity": {
+    "message": "Opacidad"
+  },
+  "windowbackgroundcolor": {
+    "message": "Color de Fondo"
+  },
+  "statisticwindow": {
+    "message": "Ventana de Estadísticas"
+  },
+  "windowstotabs": {
+    "message": "Mostrar Pestañas en lugar de Ventanas"
+  },
+  "showruntime": {
+    "message": "Mostrar Tiempo Activo"
+  },
+  "speedformat": {
+    "message": "Formato de Velocidad"
+  },
+  "hour": {
+    "message": "Hora"
+  },
+  "min": {
+    "message": "Minuto"
+  },
+  "deltaoptions": {
+    "message": "Activar funciones Delta. Algunas pueden contener Bugs"
+  },
+  "palladiumlogic": {
+    "message": "Función de Paladio (Solo funciona si Delta y Bot de Paladio están activos)"
+  },
+  "shipconfigs": {
+    "message": "Configuraciones de Nave"
+  },
+  "attackconfig": {
+    "message": "Configuración de Ataque:"
+  },
+  "flyingconfig": {
+    "message": "Configuración de Velocidad:"
+  },
+  "advanced": {
+    "message": "Avanzado(principiantes alejense!)"
+  },
+  "logictick": {
+    "message": "Logic tick (ms)"
+  },
+  "refreshsettings": {
+    "message": "Configuración de Refresh"
+  },
+  "enablerefresh": {
+    "message": "Activar función Refresh"
+  },
+  "refreshtime": {
+    "message": "Recargar la pagina cada (min)"
+  },
+  "enablenpcblocklist": {
+    "message": "Incluir la lista de NPCs en la función Refresh"
+  },
+  "refreshtoreconnect": {
+    "message": "Refresh page when disconnected"
+  },
+  "clearsettings": {
+    "message": "Limpiar configuraciones(Función Refresh)"
+  },
+  "reviveat": {
+    "message": "Revivir en"
+  },
+  "base": {
+    "message": "Base"
+  },
+  "gate": {
+    "message": "Portal"
+  },
+  "spot": {
+    "message": "En el sitio"
+  },
+  "norevive": {
+    "message": "No reparar"
+  },
+  "revivelimit": {
+    "message": "Limite de revivir"
+  },
+  "workmap": {
+    "message": "Mapa"
+  },
+  "any": {
+    "message": "Cualquiera"
+  },
+  "onlyworkdelta": {
+    "message": "(Solo funciona si Delta está activo)"
+  },
+  "boxsettings": {
+    "message": "Configuración de Recolección"
+  },
+  "bonusbox": {
+    "message": "Cajas de Bono"
+  },
+  "materials": {
+    "message": "Materiales"
+  },
+  "cargobox": {
+    "message": "Cajas de Carga"
+  },
+  "greenorgoldbooty": {
+    "message": "Cofres Verdes | Dorados"
+  },
+  "redbooty": {
+    "message": "Cofres Rojos"
+  },
+  "bluebooty": {
+    "message": "Cofres Azules"
+  },
+  "masquebooty": {
+    "message": "Cofres Apocalipsis"
+  },
+  "collectboxwhencircle": {
+    "message": "Colectar mientras gira (Solo si Delta está activo)"
+  },
+  "target": {
+    "message": "Objetivo: "
+  },
+  "hp": {
+    "message": "Vida: "
+  },
+  "shd": {
+    "message": "Escudo: "
+  },
+  "palladiumbot": {
+    "message": "Bot de Paladio"
+  },
+  "moverandomly": {
+    "message": "Moverse Aleatoriamente"
+  },
+  "killnpcs": {
+    "message": "Matar NPCs"
+  },
+  "fleefromenemy": {
+    "message": "Huir de los Enemigos"
+  },
+  "avoidattackednpc": {
+    "message": "Evitar NPCs atacados por otros<br>(No usar con el PET)"
+  },
+  "circle": {
+    "message": "Girar en Círculos"
+  },
+  "circleradius": {
+    "message": "Radio del Círculo <span> (500px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "No girar cuando el HP sea menor de 25%"
+  },
+  "repairwhenhp": {
+    "message": "Repara cuando el HP sea menor de <span> (10%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Saltar portal y Regresar"
+  },
+  "autochangeconfig": {
+    "message": "Cambiar Config Automaticamente"
+  },
+  "dodgethecbs": {
+    "message": "Esquivar Estación de Batalla"
+  },
+  "resettarget": {
+    "message": "Restablecer el objetivo cuando la vida sea menor de 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Guardar cambios y Activar Refresh"
+  },
+  "attackdetails": {
+    "message": "Detalles del Objetivo"
+  },
+  "general": {
+    "message": "General"
+  },
+  "gghelper": {
+    "message": "Puertas Galácticas"
+  },
+  "ggbot": {
+    "message": "GG Bot (En Fase de Pruebas)"
+  },
+  "jumpin": {
+    "message": "Saltar a"
+  },
+  "minimap": {
+    "message": "Minimapa"
+  },
+  "excludenpcto": {
+    "message": "Excluir NPCs para Atacar"
+  },
+  "statistic": {
+    "message": "Estadísticas"
+  },
+  "startat": {
+    "message": "Comienzo: "
+  },
+  "credits": {
+    "message": "Créditos: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "Energías Extra: "
+  },
+  "ammo": {
+    "message": "Munición: "
+  },
+  "experiencie": {
+    "message": "Experiencia: "
+  },
+  "honor": {
+    "message": "Honor: "
+  },
+  "rank": {
+    "message": "Puntos de Rango: "
+  },
+  "death": {
+    "message": "Número de Muertes: "
+  },
+  "speed": {
+    "message": "Velocidad: "
+  },
+  "runtime": {
+    "message": "Tiempo activo: "
+  },
+  "reset": {
+    "message": "Reiniciar Estadísticas"
+  }
+}

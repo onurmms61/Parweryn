@@ -1,13 +1,11 @@
 class ShipAttackHandler {
   static get ID() {
-    return 26034;
+    return 13529;//28759;
   }
 
   constructor() {
     this._handler = function (e, a) {
-      let shipAttackCmd = JSON.parse(e.detail);
-
-
+      var shipAttackCmd = JSON.parse(e.detail);
       let attackerId = shipAttackCmd[Variables.attackerId];
       let attackedShipId = shipAttackCmd[Variables.attackedId];
 

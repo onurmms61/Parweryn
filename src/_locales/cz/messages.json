@@ -1,0 +1,254 @@
+{
+  "toshidescription": {
+    "message": "Cheat/n�stroj/bot/cokoliv pro prohl�e�ovou FlashPalyer hru DarkOrbit. Docela funk�n� pom�h�, ale st�le je siln� ve v�voji.",
+    "description": "Toshinou popis"
+  },
+  "desextension": {
+    "message": "Bot pro DarkOrbit, vytvo�il Freshek.",
+    "description": "Popis roz���en� Toshinou"
+  },
+  "appearance": {
+    "message": "Vzhled"
+  },
+  "translateby": {
+    "message": "",
+    "description": "Popis roz���en� Toshinou"
+  },
+  "discordserver": {
+    "message": "Discord Server"
+  },
+  "saveall": {
+    "message": "Ulo�it v�e"
+  },
+  "headercolor": {
+    "message": "Barva z�hlav�"
+  },
+  "opacity": {
+    "message": "Pr�hlednost"
+  },
+  "windowbackgroundcolor": {
+    "message": "Barva pozad� okna"
+  },
+  "statisticwindow": {
+    "message": "Statistiky"
+  },
+  "windowstotabs": {
+    "message": "Karty m�sto oken"
+  },
+  "showruntime": {
+    "message": "Zobrazit �as botov�n�"
+  },
+  "speedformat": {
+    "message": "Form�t ��inosti"
+  },
+  "hour": {
+    "message": "hodin"
+  },
+  "min": {
+    "message": "minut"
+  },
+  "deltaoptions": {
+    "message": "Zp��stupnit Delta funkce. Nemus� pracovat spr�vn�."
+  },
+  "palladiumlogic": {
+    "message": "Palladium logika (Pouze pokud jsou Delta funkce a palladium bot aktivn�)"
+  },
+  "shipconfigs": {
+    "message": "Konfigurace lod�"
+  },
+  "attackconfig": {
+    "message": "�to�n� konfigurace:"
+  },
+  "flyingconfig": {
+    "message": "Zdrhac� konfigurace:"
+  },
+  "advanced": {
+    "message": "Pokro�il� (za��te�n�ci, toto nen� pro v�s!)"
+  },
+  "logictick": {
+    "message": "Nakliknut� (Thick Logic) (ms)"
+  },
+  "refreshsettings": {
+    "message": "Nastaven� pro obnoven� str�nky"
+  },
+  "enablerefresh": {
+    "message": "Povolit obnoven� str�nky"
+  },
+  "refreshtime": {
+    "message": "Interval obnoven� str�nky (min)"
+  },
+  "enablenpcblocklist": {
+    "message": "Zahrnout seznam necht�n�ch NPC do funkce obnoven� str�nky"
+  },
+  "refreshtoreconnect": {
+    "message": "Refresh page when disconnected"
+  },
+  "clearsettings": {
+    "message": "Vy�istit pam� nastaven� (Funkce obnoven�)"
+  },
+  "reviveat": {
+    "message": "Opravit na"
+  },
+  "base": {
+    "message": "Z�kladn�"
+  },
+  "gate": {
+    "message": "Br�n�"
+  },
+  "spot": {
+    "message": "M�st�"
+  },
+  "norevive": {
+    "message": "Neopravovat"
+  },
+  "revivelimit": {
+    "message": "Po�et oprav"
+  },
+  "workmap": {
+    "message": "Mapa botov�n�"
+  },
+  "any": {
+    "message": "Jak�koliv"
+  },
+  "onlyworkdelta": {
+    "message": "(pouze, pokud jsou Delta funkce aktivn�)"
+  },
+  "boxsettings": {
+    "message": "Nastaven� box�kovan�"
+  },
+  "bonusbox": {
+    "message": "Bonusov� boxy"
+  },
+  "materials": {
+    "message": "Materi�ly"
+  },
+  "cargobox": {
+    "message": "Cargo-boxy"
+  },
+  "greenorgoldbooty": {
+    "message": "Zelen� | Zlat� boxy ko�isti"
+  },
+  "redbooty": {
+    "message": "�erven� boxy ko�isti"
+  },
+  "bluebooty": {
+    "message": "Modr� boxy ko�isti"
+  },
+  "masquebooty": {
+    "message": "Apokaliptick� boxy ko�isti"
+  },
+  "collectboxwhencircle": {
+    "message": "Sb�rat boxy p�i krou�en� (Pokud jsou Delta funkce aktivn�)"
+  },
+  "target": {
+    "message": "C�l: "
+  },
+  "hp": {
+    "message": "HP: "
+  },
+  "shd": {
+    "message": "�t�ty: "
+  },
+  "palladiumbot": {
+    "message": "Palladium Bot"
+  },
+  "moverandomly": {
+    "message": "Nahodil� pohyb lodi"
+  },
+  "killnpcs": {
+    "message": "St��let NPC"
+  },
+  "fleefromenemy": {
+    "message": "Ulet�t p�ed nep��teli"
+  },
+  "avoidattackednpc": {
+    "message": "Nest��let do ji� napaden�ch NPC <br>(Nepou��vat s PETem)"
+  },
+  "circle": {
+    "message": "Krou�it"
+  },
+  "circleradius": {
+    "message": "R�dius krou�en� <span> (500px)</span>"
+  },
+  "dontcirclewhenhp": {
+    "message": "Nekrou�it, kdy� HP < 25%"
+  },
+  "repairwhenhp": {
+    "message": "Opravit, kdy� HP < <span> (10%)</span>"
+  },
+  "jumpandreturn": {
+    "message": "Sko�it a vr�tit se"
+  },
+  "autochangeconfig": {
+    "message": "Automaticky zm�nit konfiguraci"
+  },
+  "dodgethecbs": {
+    "message": "Vyh�bat se klanov�m stanic�m"
+  },
+  "resettarget": {
+    "message": "Zm�nit c�l, kdy� HP < 25%"
+  },
+  "savesettingsandenable": {
+    "message": "Ulo�it nastaven� & Aktivovat obnoven� str�nky"
+  },
+  "attackdetails": {
+    "message": "Detaily �toku"
+  },
+  "general": {
+    "message": "Hlavn�"
+  },
+  "gghelper": {
+    "message": "GG Pomocn�k"
+  },
+  "ggbot": {
+    "message": "GG Bot (Testov�n�)"
+  },
+  "jumpin": {
+    "message": "Sko�it"
+  },
+  "minimap": {
+    "message": "Minimapa"
+  },
+  "excludenpcto": {
+    "message": "Ne�to�it na NPC"
+  },
+  "statistic": {
+    "message": "Statistiky"
+  },
+  "startat": {
+    "message": "Spu�t�no v: "
+  },
+  "credits": {
+    "message": "Kredity: "
+  },
+  "uridium": {
+    "message": "Uridium: "
+  },
+  "ggenergy": {
+    "message": "GG Energie: "
+  },
+  "ammo": {
+    "message": "Munice: "
+  },
+  "experiencie": {
+    "message": "Zku�enost: "
+  },
+  "honor": {
+    "message": "�est: "
+  },
+  "rank": {
+    "message": "Rankingov� body: "
+  },
+  "death": {
+    "message": "Po�et �mrt�: "
+  },
+  "speed": {
+    "message": "��innost: "
+  },
+  "runtime": {
+    "message": "�as botov�n�: "
+  },
+  "reset": {
+    "message": "Reset"
+  }
+}

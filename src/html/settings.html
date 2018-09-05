@@ -1,58 +1,209 @@
-<!-- created by Freshek on 30.10.2017 -->
+﻿<!-- created by Freshek on 30.10.2017 -->
 
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
+  <title>Toshinou Revamped Delta Configuration</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-
-<body>
-  <form>
-    <h4>Görünüm</h4>
-    <label>Üstbilgi rengi
-      <input type="color" id="headerColor" value="#16262f">
-    </label>
-    <label> | saydamlık
-      <input type="range" id="headerOpacity" min="0" max="1" step="0.01" value="0.9">
-    </label>
-    <br>
-    <label>Pencere arka plan rengi
-      <input type="color" id="windowColor" value="#16262f">
-    </label>
-    <label> | saydamlık
-      <input type="range" id="windowOpacity" min="0" max="1" step="0.01" value="0.8">
-    </label>
-    <br>
-
-    <input type="checkbox" id="windowsToTabs" />
-    <label for="windowsToTabs">Pencereler yerine sekmeler</label>
-
-    <hr>
-    <h4>Gelişmiş (bilmeyenler değiştirmesin!)</h4>
-    <label>Tıklama mantığı (ms)
-      <input type="number" id="timerTick" min="50" max="20000" value="300">
-    </label>
-    <br>
-    <hr>
-    <h4>İstatistik penceresi</h4>
-    <input type="checkbox" id="showRuntime" />
-    <label for="showRuntime">Çalışma zamanını göster</label>
-    <br>
-
-    <h5>Hız biçimi</h5>
-    <input type="radio" id="speedFormat_min" name="speedFormat" value="min">
-    <label for="speedFormat_min">uri/dak.</label>
-    <br>
-
-    <input type="radio" id="speedFormat_hour" name="speedFormat" value="hour" checked>
-    <label for="speedFormat_hour">uri/saat</label>
-
-    <hr>
-
-    <input type="submit" value="kaydet">
-  </form>
-
+<body class="container">
+    <center>
+      <h1>Toshinou Revamped Delta</h1>
+    </center>
+    <p class="text-center" data-resource="toshidescription">A cheat/tool/bot/whatever for a browser flash game named DarkOrbit. It does some pretty neat stuff and is still under heavy development.</p>
+    <p class="text-center"><span data-resource="discordserver">Discord Server</span>: <a href="https://discord.gg/u7MaGre">https://discord.gg/u7MaGre</a></p>
+	<p class="text-center" data-resource="translateby"></p>
+    <form id="optionsdata">
+    <table class="table table-bordered">
+      <tr>
+        <th colspan="3"><span data-resource="appearance">Appearance</span></th>
+        <td colspan="1">
+          <center><button type="submit" class="btn btn-success" form="optionsdata"><span data-resource="saveall">Save All</span></button></center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="headerColor"><span data-resource="headercolor">Header color</span></label>
+          <input type="color" id="headerColor" value="#16262f">
+        </td>
+        <td>
+          <label for="headerOpacity"><span data-resource="opacity">opacity</span></label>
+          <input type="range" id="headerOpacity" min="0" max="1" step="0.01" value="0.9">
+        </td>
+        <td>
+          <label for="windowColor"><span data-resource="windowbackgroundcolor">Window background color</span></label>
+          <input type="color" id="windowColor" value="#16262f">
+        </td>
+        <td>
+          <label for="windowOpacity"><span data-resource="opacity">opacity</span></label>
+          <input type="range" id="windowOpacity" min="0" max="1" step="0.01" value="0.8">
+        </td>
+      </tr>
+      <tr>
+        <td><span data-resource="statisticwindow">Statistic window</span></td>
+        <td>
+          <input type="checkbox" id="showRuntime" checked />
+          <label for="showRuntime"><span data-resource="showruntime">Show runtime</span></label>
+        </td>
+        <td colspan="2">
+          <input type="checkbox" id="windowsToTabs" />
+          <label for="windowsToTabs"><span data-resource="windowstotabs">Tabs instead of windows</span></label>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2"><span data-resource="speedformat">Speed format</span></th>
+        <td>
+          <input type="radio" id="speedFormat_min" name="speedFormat" value="min">
+          <label for="speedFormat_min">uri/<span data-resource="min">min</span></label>
+        </td>
+        <td>
+          <input type="radio" id="speedFormat_hour" name="speedFormat" value="hour" checked>
+          <label for="speedFormat_hour">uri/<span data-resource="hour">hour</span></label>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <input type="checkbox" id="deltaOptions" />
+          <label for="deltaOptions"><span data-resource="deltaoptions">Enable delta functions. Some may have bugs</span></label>
+        </th>
+        <th colspan="2">
+          <input type="checkbox" id="palladiumLogic" />
+          <label for="palladiumLogic"><span data-resource="palladiumlogic">Palladium logic (It works only if delta and palladium bot are active)</span></label>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2"><span data-resource="shipconfigs">Ship Configs</span></th>
+        <td>
+          <label for="attackConfig"><span data-resource="attackconfig">Attack Config</span>: </label>
+          <input type="number" id="attackConfig" min="1" max="2" value="1">
+        </td>
+        <td>
+          <label for="flyingConfig"><span data-resource="flyingconfig">Flying Config</span>: </label>
+          <input type="number" id="flyingConfig" min="1" max="2" value="1">
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2"><span data-resource="advanced">Advanced (beginners, go away!)</span></th>
+        <td colspan="2">
+          <label for="timerTick"><span data-resource="logictick">Logic tick (ms)</span></label>
+          <input type="number" id="timerTick" min="50" max="20000" value="300">
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2"><span data-resource="refreshsettings">Refresh page function settings</span></th>
+        <td>
+          <input type="checkbox" id="enableRefresh">
+          <label for="enableRefresh"><span data-resource="enablerefresh">Enable refresh function</span></label>
+        </td>
+        <td>
+          <label for="refreshTime"><span data-resource="refreshtime">Refresh interval (min)</span></label>
+          <input type="number" id="refreshTime" min="30" max="300" value="60">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="enableNPCBlockList" />
+          <label for="enableNPCBlockList"><span data-resource="enablenpcblocklist">Include npc black list into refresh page function</span></label>
+        </td>
+        <td>
+          <input type="checkbox" id="refreshToReconnect">
+          <label for="refreshToReconnect"><span data-resource="refreshtoreconnect">Refresh instead of reconnect</span></label>
+        </td>
+        <td colspan="2">
+            <center><button class="clearSettings btn btn-warning"><span data-resource="clearsettings">Clear settings storage (Refresh function)</span></button></center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><label for="reviveType"><span data-resource="reviveat">Revive at</span>: </label></b>
+          <select id="reviveType">
+            <option value="0"><span data-resource="base">Base</span></option>
+            <option value="1"><span data-resource="gate">Gate</span></option>
+            <option value="2"><span data-resource="spot">Spot</span></option>
+            <option value="3"><span data-resource="norevive">No repair</span></option>
+          </select>
+        </td>
+        <td>
+          <b><label for="reviveLimit"><span data-resource="revivelimit">Revive limit</span>: </label></b>
+          <input type="number" id="reviveLimit" min="1" max="99" value="5">
+        </td>
+        <td colspan="2">
+          <b><label for="workmap"><span data-resource="workmap">Work Map</span>:</label></b>
+          <select id="workmap">
+            <option value="0"><span data-resource="any">Any</span></option>
+            <option value="2">1-2</option>
+            <option value="3">1-3</option>
+            <option value="4">1-4</option>
+            <option value="6">2-2</option>
+            <option value="7">2-3</option>
+            <option value="8">2-4</option>
+            <option value="10">3-2</option>
+            <option value="11">3-3</option>
+            <option value="12">3-4</option>
+            <option value="13">4-1</option>
+            <option value="14">4-2</option>
+            <option value="15">4-3</option>
+            <option value="16">4-4</option>
+            <option value="29">4-5</option>
+            <option value="17">1-5</option>
+            <option value="18">1-6</option>
+            <option value="19">1-7</option>
+            <option value="20">1-8</option>
+            <option value="21">2-5</option>
+            <option value="22">2-6</option>
+            <option value="23">2-7</option>
+            <option value="24">2-8</option>
+            <option value="25">3-5</option>
+            <option value="26">3-6</option>
+            <option value="27">3-7</option>
+            <option value="28">3-8</option>
+          </select>
+          <span data-resource="onlyworkdelta">(Only works if delta active)</span>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="4"><center><span data-resource="boxsettings">Box settings</span></center></th>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="bonusBox">
+          <label for="bonusBox"><span data-resource="bonusbox">Bonus box</span></label>
+        </td>
+        <td>
+          <input type="checkbox" id="materials">
+          <label for="materials"><span data-resource="materials">Materials</span></label>
+        </td>
+        <td>
+          <input type="checkbox" id="cargoBox">
+          <label for="cargoBox"><span data-resource="cargobox">Cargo box</span></label>
+        </td>
+        <td>
+          <input type="checkbox" id="greenOrGoldBooty">
+          <label for="greenOrGoldBooty"><span data-resource="greenorgoldbooty">Green | Gold booty boxes</span></label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="redBooty">
+          <label for="redBooty"><span data-resource="redbooty">Red booty boxes</span></label>
+        </td>
+        <td>
+          <input type="checkbox" id="blueBooty">
+          <label for="blueBooty"><span data-resource="bluebooty">Blue booty boxes</span></label>
+        </td>
+        <td>
+          <input type="checkbox" id="masqueBooty">
+          <label for="masqueBooty"><span data-resource="masquebooty">Apocalyptic booty boxes</span></label>
+        </td>
+        <td>
+          <input type="checkbox" id="collectBoxWhenCircle">
+          <label for="collectBoxWhenCircle" data-resource="collectboxwhencircle">Collect Box When Circle (If delta active)</label>
+        </td>
+      </tr>
+    </table>
+    </form>
   <script src="/js/libs/jquery-3.2.1.min.js"></script>
   <script src="settings.js"></script>
 </body>

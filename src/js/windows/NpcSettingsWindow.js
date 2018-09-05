@@ -3,7 +3,7 @@ class NpcSettingsWindow {
     this.npcSettingsWindow = WindowFactory.createWindow({
       width: 320,
       maxHeight: 300,
-      text: "Yaratıkları Saldırıdan Hariç Tut"
+      text: chrome.i18n.getMessage("excludenpcto")
     });
 
     let controls = [];
@@ -49,7 +49,7 @@ class NpcSettingsWindow {
       "-=[ Saboteur ]=-",
       "-=[ Annihilator ]=-",
       "-=[ Battleray ]=-",
-	  "-=[ Deadly Battleray ]=-",
+      "-=[ Deadly Battleray ]=-",
       "..::{ Boss Streuner }::..",
       "..::{ Boss Lordakia }::..",
       "..::{ Boss Mordon }::..",

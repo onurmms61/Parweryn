@@ -3,7 +3,7 @@ class StatisticWindow {
   createWindow() {
     this.botStatisticWindow = WindowFactory.createWindow({
       width: 320,
-      text: "İstatistik"
+      text: chrome.i18n.getMessage("statistic")
     });
     this.connected = false;
 
@@ -24,62 +24,62 @@ class StatisticWindow {
 
     let options = [{
         name: 'startTime',
-        labelText: 'Başlama: ',
+        labelText: chrome.i18n.getMessage("startat"),
         spanText: this.stats.startTime.toLocaleString(navigator.languages[0]),
         appendTo: this.botStatisticWindow
       },
       {
         name: 'credits',
-        labelText: 'Kredi: ',
+        labelText: chrome.i18n.getMessage("credits"),
         spanText: '0',
         appendTo: this.botStatisticWindow
       },
       {
         name: 'uridium',
-        labelText: 'Uridium: ',
+        labelText: chrome.i18n.getMessage("uridium"),
         spanText: '0',
         appendTo: this.botStatisticWindow
       },
       {
         name: 'energy',
-        labelText: 'GG Enerji: ',
+        labelText: chrome.i18n.getMessage("ggenergy"),
         spanText: '0',
         appendTo: this.botStatisticWindow
       },
       {
         name: 'ammo',
-        labelText: 'Cephane: ',
+        labelText: chrome.i18n.getMessage("ammo"),
         spanText: '0',
         appendTo: this.botStatisticWindow
       },
       {
         name: 'experience',
-        labelText: 'Tecrübe: ',
+        labelText: chrome.i18n.getMessage("experiencie"),
         spanText: '0',
         appendTo: this.botStatisticWindow
       },
       {
         name: 'honor',
-        labelText: 'Şeref: ',
+        labelText: chrome.i18n.getMessage("honor"),
         spanText: '0',
         appendTo: this.botStatisticWindow
       },
       {
         name: 'rank',
-        labelText: 'Rütbe Puanı: ',
+        labelText: chrome.i18n.getMessage("rank"),
         spanText: '0',
         appendTo: this.botStatisticWindow
       },
       {
         name: 'death',
-        labelText: 'Ölüm sayısı: ',
+        labelText: chrome.i18n.getMessage("death"),
         spanText: '0',
         appendTo: this.botStatisticWindow
       },
       {
         name: 'speed',
-        labelText: 'Hız: ',
-        spanText: '0.00 uri/dk.',
+        labelText: chrome.i18n.getMessage("speed"),
+        spanText: '0.00 uri/min.',
         appendTo: this.botStatisticWindow
       }
     ];
@@ -87,7 +87,7 @@ class StatisticWindow {
     if (window.globalSettings.showRuntime) {
       options.push({
         name: 'runtime',
-        labelText: 'Süre: ',
+        labelText: chrome.i18n.getMessage("runtime"),
         spanText: '00:00:00',
         appendTo: this.botStatisticWindow
       });
@@ -98,7 +98,7 @@ class StatisticWindow {
     });
 
     this.resetBtn = ControlFactory.btn({
-      labelText: 'Reset',
+      labelText: chrome.i18n.getMessage("reset"),
       appendTo: ControlFactory.emptyDiv(this.botStatisticWindow)
     });
 
@@ -206,10 +206,10 @@ class StatisticWindow {
       let el = $('span:last-child', htmlEl);
       if (detailEl == "experience") {
         this.stats.rank += parseInt(e.detail[detailEl]) / 10000;
-        this.rank.text("Rank Points: " + Math.floor(this.stats.rank));
+        this.rank.text(chrome.i18n.getMessage("rank") + Math.floor(this.stats.rank));
       } else if (detailEl == "honor") {
         this.stats.rank += parseInt(e.detail[detailEl]) / 100;
-        this.rank.text("Rank Points: " + Math.floor(this.stats.rank));
+        this.rank.text(chrome.i18n.getMessage("rank") + Math.floor(this.stats.rank));
       }
       this.stats[detailEl] += parseInt(e.detail[detailEl]);
       let collected = this.stats[detailEl];

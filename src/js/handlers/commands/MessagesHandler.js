@@ -1,7 +1,7 @@
 class MessagesHandler {
 
   static get ID() {
-    return 6851;
+    return 31694;
   }
 
   constructor() {
@@ -15,7 +15,6 @@ class MessagesHandler {
         'EP': 'experience',
         'HON': 'honor',
       };
-
       let s = e.wholeMessage.split("|");
       s.splice(0, 1);
       s = JSON.parse(s.join('|'));

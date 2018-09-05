@@ -1,6 +1,6 @@
 class HeroUpdateHitpointsHandler {
   static get ID() {
-    return 27795;
+    return 21480;
   }
 
   constructor() {
@@ -8,7 +8,8 @@ class HeroUpdateHitpointsHandler {
       let parsedJson = JSON.parse(e.detail);
 
       window.hero.maxHp = parsedJson[Variables.hpUpdateMaxHp];
-      window.hero.hp = parsedJson[Variables.hpUpdateHp];
+      window.hero.hp = parsedJson[Variables.hpUpdateHp]; 
+
     }
   }
 

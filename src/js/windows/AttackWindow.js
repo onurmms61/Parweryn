@@ -2,17 +2,17 @@ class AttackWindow {
   createWindow() {
     this.attackWindow = WindowFactory.createWindow({
       width: 320,
-      text: "Saldırı Detayları"
+      text: chrome.i18n.getMessage("attackdetails")
     });
 
     this.targetNameTxt = jQuery("<h4>");
-    this.targetNameTxt.text("Hedef: -");
+    this.targetNameTxt.text(chrome.i18n.getMessage("target")+" - ");
 
     this.hpTxt = jQuery("<h4>");
-    this.hpTxt.text("Darbe Puanı: -");
+    this.hpTxt.text(chrome.i18n.getMessage("hp")+" - ");
 
     this.shdTxt = jQuery("<h4>");
-    this.shdTxt.text("Kalkan: -");
+    this.shdTxt.text(chrome.i18n.getMessage("shd")+" - ");
 
     this.targetNameTxt.appendTo(this.attackWindow);
     this.hpTxt.appendTo(this.attackWindow);
@@ -20,20 +20,20 @@ class AttackWindow {
   }
 
   removeTarget() {
-    this.targetName.text("Hedef: -");
-    this.hpTxt.text("Darbe Puanı: -");
-    this.shdTxt.text("Kalkan: -");
+    this.targetName.text(chrome.i18n.getMessage("target"));
+    this.hpTxt.text(chrome.i18n.getMessage("hp"));
+    this.shdTxt.text(chrome.i18n.getMessage("shd"));
   }
 
   targetName(value) {
-    this.targetNameTxt.text("Hedef: " + value);
+    this.targetNameTxt.text(chrome.i18n.getMessage("target") + value);
   }
 
   hp(value) {
-    this.hpTxt.text("Darbe Puanı: " + value);
+    this.hpTxt.text(chrome.i18n.getMessage("hp") + value);
   }
 
   shd(value) {
-    this.shdTxt.text("Kalkan: " + value);
+    this.shdTxt.text(chrome.i18n.getMessage("shd") + value);
   }
 }

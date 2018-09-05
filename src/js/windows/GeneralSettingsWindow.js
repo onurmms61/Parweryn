@@ -2,28 +2,21 @@ class GeneralSettingsWindow {
   createWindow() {
     this.botSettingsWindow = WindowFactory.createWindow({
       width: 320,
-      text: "Genel"
+      text: chrome.i18n.getMessage("general")
     });
 
-    let controls = [{
+    let controls = [
+      {
         name: 'palladium',
-        labelText: 'Palladyum topla',
+        labelText: chrome.i18n.getMessage("palladiumbot"),
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.palladium = this.checked;
         }
       },
-      /*{
-        name: 'save',
-        labelText: 'Refresh',
-        appendTo: this.botSettingsWindow,
-        event: function () {
-          window.settings.refresh = this.checked;
-        }
-      },*/
       {
         name: 'moveRandomly',
-        labelText: 'Rastgele hareket et',
+        labelText: chrome.i18n.getMessage("moverandomly"),
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.moveRandomly = this.checked;
@@ -31,7 +24,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'npcKiller',
-        labelText: 'Yaratıkları öldür',
+        labelText: chrome.i18n.getMessage("killnpcs"),
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.killNpcs = this.checked;
@@ -39,7 +32,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'fleeFromEnemy',
-        labelText: 'Düşmandan kaç',
+        labelText: chrome.i18n.getMessage("fleefromenemy"),
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.fleeFromEnemy = this.checked;
@@ -47,7 +40,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'avoidAttackedNpcs',
-        labelText: 'Saldırıya uğrayan yaratıklardan kaçının<br>(PET ile kullanmayın)',
+        labelText: chrome.i18n.getMessage("avoidattackednpc"),
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.avoidAttackedNpcs = this.checked;
@@ -55,7 +48,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'npcCircle',
-        labelText: 'Daire',
+        labelText: chrome.i18n.getMessage("circle"),
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.circleNpc = this.checked;
@@ -63,7 +56,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'npcCircleRadius',
-        labelText: 'Daire yarıçapı <span> (500px)</span>',
+        labelText: chrome.i18n.getMessage("circleradius"),
         type: 'range',
         appendTo: this.botSettingsWindow,
         labelBefore: true,
@@ -80,7 +73,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'dontCircleWhenHpBelow25Percent',
-        labelText: "Darbe Puanı 25% den küçük olduğunda daire çizmeyi bırak",
+        labelText: chrome.i18n.getMessage("dontcirclewhenhp"),
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.dontCircleWhenHpBelow25Percent = this.checked;
@@ -88,7 +81,7 @@ class GeneralSettingsWindow {
       },
       {
         name: 'repairWhenHpIsLowerThanPercent',
-        labelText: ' Darbe Puanı <span> (10%)</span> altına düştüğünde tamir ol',
+        labelText: chrome.i18n.getMessage("repairwhenhp"),
         type: 'range',
         appendTo: this.botSettingsWindow,
         labelBefore: true,
@@ -96,52 +89,72 @@ class GeneralSettingsWindow {
           min: 0,
           max: 100,
           step: 1,
-          value: 80,
+          value: 10,
         },
         event: function (ev) {
           window.settings.repairWhenHpIsLowerThanPercent = this.value;
           $('span:last-child', this.label).text(' (' + this.value + '%)');
         }
-      },
-      {
-        name: 'reviveAtGate',
-        labelText: 'En yakın kapıda tamir ol',
-        appendTo: this.botSettingsWindow,
-        event: function () {
-          window.settings.reviveAtGate = this.checked;
-        }
-      },
-      {
-        name: 'reviveLimit',
-        labelText: 'Ölüm limiti <span> (5)</span>',
-        type: 'range',
-        appendTo: this.botSettingsWindow,
-        labelBefore: true,
-        attrs: {
-          min: 0,
-          max: 100,
-          step: 1,
-          value: 10
-        },
-        event: function () {
-          window.settings.reviveLimit = this.value;
-          $('span:last-child', this.label).text(' (' + this.value + ')');
-        }
       }
     ];
 
-    /*this.saveSettingsBtn = ControlFactory.btn({
-      labelText: 'Save settings',
-      appendTo: ControlFactory.emptyDiv(this.botSettingsWindow)
-    });*/
+
+    if (window.globalSettings.deltaOptions) {
+      controls.splice(5,0,
+        {
+          name: 'jumpFromEnemy',
+          labelText: chrome.i18n.getMessage("jumpandreturn"),
+          appendTo: this.botSettingsWindow,
+          event: function () {
+            window.settings.jumpFromEnemy = this.checked;
+          }
+        }
+      );
+      controls.splice(6,0,
+        {
+          name: 'autoChangeConfig',
+          labelText: chrome.i18n.getMessage("autochangeconfig"),
+          appendTo: this.botSettingsWindow,
+          event: function () {
+            window.settings.autoChangeConfig = this.checked;
+          }
+        }
+      );
+      controls.splice(7,0,
+        {
+          name: 'dodgeTheCbs',
+          labelText: chrome.i18n.getMessage("dodgethecbs"),
+          appendTo: this.botSettingsWindow,
+          event: function () {
+            window.settings.dodgeTheCbs = this.checked;
+          }
+        }
+      );
+      controls.splice(11,0,
+        {
+          name: 'resetTargetWhenHpBelow25Percent',
+          labelText: chrome.i18n.getMessage("resettarget"),
+          appendTo: this.botSettingsWindow,
+          event: function () {
+            window.settings.resetTargetWhenHpBelow25Percent = this.checked;
+          }
+        }
+      );
+    } else {
+      window.settings.travelsystem = false;
+      window.settings.jumpFromEnemy = false;
+      window.settings.autoChangeConfig = false;
+      window.settings.dodgeTheCbs = false;
+      window.settings.resetTargetWhenHpBelow25Percent = false;
+    }
 
     controls.forEach((control) => {
       this[control.name] = ControlFactory.createControl(control);
     });
 
-    /*$(this.saveSettingsBtn).on('click', (e) => {
-      chrome.storage.sync.set(window.settings);
-      console.log("saved")
-    })*/
+    if (window.globalSettings.enableRefresh) {
+      let saveButton = jQuery('<div class="saveButton"><button class="btn_save save btn">'+chrome.i18n.getMessage("savesettingsandenable")+'</button></div>');
+    this.botSettingsWindow.append(saveButton);
+    }
   }
 }

@@ -1,6 +1,6 @@
 class BoxInitHandler {
   static get ID() {
-    return 12888;
+    return 28989;
   }
 
   constructor() {
@@ -14,7 +14,6 @@ class BoxInitHandler {
       if (a.isOnBlacklist(box.hash)) {
         return;
       }
-
       let pBox = new Box(box.x, box.y, box.hash, box[Variables.boxType]);
       a.boxes[box.hash] = pBox;
     };
