@@ -1,10 +1,3 @@
-Dm94 Release
-==========
-Since no other dev is still in the project (or are missing) and that I do not have enough knowledge to avoid the anti-bots measures I will stop updating Toshinou Revamped. If in the future some dev decides to continue with the project I will help to add improvements. Thanks to everyone who has participated in this project
-
-ES:
-Dado que ningun otro dev sigue en el proyecto (o estan desaparecidos) y que yo no tengo los suficientes conocimientos para evitar las medidas anti bots voy a dejar de actualizar Toshinou Revamped. Si en un futuro algun dev decide continuar con el proyecto yo ayudaré a añadir mejoras. Gracias a todos los que habeis participado en este proyecto
-
 
 Toshinou Revamped Delta
 ==========

@@ -7,14 +7,12 @@ class GlobalSettings {
       windowColor: "#191919",
       windowOpacity: "0.8",
       timerTick: 300,
-      showRuntime: true,
       enableRefresh: false,
       refreshToReconnect: false,
-      enableNPCBlockList: false,
       refreshTime: 60,
       speedFormat: 'hour',
       windowsToTabs: false,
-      deltaOptions: false,
+      autoChangeConfig: false,
       attackConfig: 1,
       flyingConfig: 1,
       reviveType: 1,
@@ -28,10 +26,39 @@ class GlobalSettings {
       masqueBooty: false,
       collectBoxWhenCircle: false,
       workmap: 0,
-      palladiumLogic: false,
+      changeFormation: false,
+      attackFormation: -2,
+      flyingFormation: -2,
+      useHability: false,
+      habilitySlot: -1,
+      npcList: null,
+      changeAmmunition: false,
+      x1Slot: -1,
+      x2Slot: -1,
+      x3Slot: -1,
+      x4Slot: -1,
+      sabSlot: -1
     }, items => {
       self._settings = items;
     });
+  }
+  get habilitySlot(){
+    return this._settings.habilitySlot;
+  }
+  get useHability(){
+    return this._settings.useHability;
+  }
+
+  get changeFormation(){
+    return this._settings.changeFormation;
+  }
+
+  get attackFormation(){
+    return this._settings.attackFormation;
+  }
+
+  get flyingFormation(){
+    return this._settings.flyingFormation;
   }
 
   get headerColor() {
@@ -58,18 +85,12 @@ class GlobalSettings {
     return this._settings.speedFormat;
   }
 
-  get showRuntime() {
-    return this._settings.showRuntime;
-  }
-
   get enableRefresh() {
     return this._settings.enableRefresh;
   }
+  
   get refreshToReconnect(){
     return this._settings.refreshToReconnect;
-  }
-  get enableNPCBlockList() {
-    return this._settings.enableNPCBlockList;
   }
 
   get refreshTime() {
@@ -79,11 +100,10 @@ class GlobalSettings {
   get windowsToTabs() {
     return this._settings.windowsToTabs;
   }
-
-  get deltaOptions() {
-    return this._settings.deltaOptions;
+  
+  get autoChangeConfig() {
+    return this._settings.autoChangeConfig;
   }
-
   get attackConfig() {
     return this._settings.attackConfig;
   }
@@ -135,8 +155,33 @@ class GlobalSettings {
   get workmap() {
     return this._settings.workmap;
   }
-
-  get palladiumLogic() {
-    return this._settings.palladiumLogic;
+  
+  get npcList() {
+	return this._settings.npcList;
   }
+
+  get changeAmmunition() {
+    return this._settings.changeAmmunition;
+  }
+
+  get x1Slot() {
+    return this._settings.x1Slot;
+  }
+
+  get x2Slot() {
+    return this._settings.x2Slot;
+  }
+
+  get x3Slot() {
+    return this._settings.x3Slot;
+  }
+
+  get x4Slot() {
+    return this._settings.x4Slot;
+  }
+
+  get sabSlot() {
+    return this._settings.sabSlot;
+  }
+
 }

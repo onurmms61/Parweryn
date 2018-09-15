@@ -34,6 +34,9 @@ class MessagesHandler {
         });
       }
 
+      if("SLA" == message[2]){
+    	  this.palladium(message);
+      }
       if (_events.hasOwnProperty(message[3])) {
         this[_events[message[3]]](message);
       }
@@ -105,6 +108,15 @@ class MessagesHandler {
       }
     });
     window.dispatchEvent(event);
+  }
+  
+  palladium(message) {
+	let event = new CustomEvent("addPalladium", {
+	  detail: {
+	    palladium: 1
+	  }
+	});
+	window.dispatchEvent(event);
   }
 
   connection({

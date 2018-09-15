@@ -1,10 +1,23 @@
 {
   "manifest_version": 2,
   "name": "Toshinou Revamped Delta",
-  "version": "0.19",
+  "version": "3.30",
   "default_locale": "en",
   "description": "__MSG_desextension__",
-
+  "page_action": {
+      "default_icon": {
+        "16": "images/Toshinou-logo-16x16.png",
+        "32": "images/Toshinou-logo-32x32.png",
+        "48": "images/Toshinou-logo-48x48.png",
+        "128": "images/Toshinou-logo-128x128.png"
+      }
+    },
+    "icons": {
+      "16": "images/Toshinou-logo-16x16.png",
+      "32": "images/Toshinou-logo-32x32.png",
+      "48": "images/Toshinou-logo-48x48.png",
+      "128": "images/Toshinou-logo-128x128.png"
+    },
   "content_scripts": [
     {
       "matches": ["*://*.darkorbit.com/indexInternal.es?action=internalMapRevolution"],
@@ -34,9 +47,6 @@
         "js/windows/AttackWindow.js",
         "js/windows/GeneralSettingsWindow.js",
         "js/windows/GGSettingsWindow.js",
-        "js/windows/NpcSettingsWindow.js",
-		"js/windows/AutolockWindow.js",
-		"js/windows/psysWindow.js",
         "js/windows/StatisticWindow.js",
         "js/objects/Movable.js",
         "js/objects/Box.js",
@@ -67,6 +77,8 @@
         "js/handlers/commands/HeroDiedHandler.js",
         "js/handlers/commands/HeroUpdateHitpointsHandler.js",
         "js/handlers/commands/AssetCreatedHandler.js",
+        "js/handlers/commands/HeroUpdateShieldHandler.js",
+        "js/handlers/commands/QuickSlotHandler.js",
         "js/Api.js",
         "js/ControlFactory.js",
         "js/worker.js"

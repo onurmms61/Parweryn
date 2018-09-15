@@ -18,6 +18,7 @@ class StatisticWindow {
       rank: 0,
       death: 0,
       speed: 0,
+      palladium: 0,
     };
 
     this.stats = Object.assign({}, defaultStat);
@@ -81,17 +82,19 @@ class StatisticWindow {
         labelText: chrome.i18n.getMessage("speed"),
         spanText: '0.00 uri/min.',
         appendTo: this.botStatisticWindow
-      }
-    ];
-
-    if (window.globalSettings.showRuntime) {
-      options.push({
+      },{
         name: 'runtime',
         labelText: chrome.i18n.getMessage("runtime"),
         spanText: '00:00:00',
         appendTo: this.botStatisticWindow
-      });
-    }
+      },
+      {
+        name: 'palladium',
+        labelText: "Palladium: ",
+        spanText: '0',
+        appendTo: this.botStatisticWindow
+      }
+    ];
 
     options.forEach((option) => {
       this[option.name] = ControlFactory.info(option);
@@ -136,6 +139,11 @@ class StatisticWindow {
         event: 'deathCounter',
         el: 'death',
         detailEl: 'death'
+      },
+      {
+        event: 'addPalladium',
+        el: 'palladium',
+        detailEl: 'palladium'
       }
     ];
 
@@ -171,9 +179,7 @@ class StatisticWindow {
     $(window).on('logicEnd', () => {
       if (this.connected) {
 
-        if (window.globalSettings.showRuntime) {
-          $('span:last-child', this.runtime).text(TimeHelper.diff(this.stats.startTime));
-        }
+        $('span:last-child', this.runtime).text(TimeHelper.diff(this.stats.startTime));
 
         $('span:last-child', this.speed).text(this.speedFormat(this.stats.uridium, this.stats.startTime));
       }

@@ -9,7 +9,6 @@ class HeroUpdateHitpointsHandler {
 
       window.hero.maxHp = parsedJson[Variables.hpUpdateMaxHp];
       window.hero.hp = parsedJson[Variables.hpUpdateHp]; 
-
     }
   }
 

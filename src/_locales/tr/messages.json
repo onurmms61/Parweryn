@@ -250,5 +250,32 @@
   },
   "reset": {
     "message": "Sifirla"
+  },
+  "shipsettings": {
+    "message": "Ship settings"
+  },
+  "changedroneformation": {
+    "message": "Change Drone Formation"
+  },
+  "attackformationslot": {
+    "message": "Attack Formation Slot"
+  },
+  "flyingformationslot": {
+    "message": "Flying Formation Slot"
+  },
+  "droneformations": {
+    "message": "Drone Formations(BETA)"
+  },
+  "shiphability": {
+    "message": "Ship Hability (BETA)"
+  },
+  "usehability": {
+    "message": "Use Hability"
+  },
+  "habilityslot": {
+    "message": "Hability slot"
+  },
+  "refreshsettings": {
+    "message": "Refresh settings"
   }
 }

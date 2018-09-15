@@ -138,7 +138,7 @@
     "message": "Apocalyptic booty boxes"
   },
   "collectboxwhencircle": {
-    "message": "Collect Box When Circle (If delta active)"
+    "message": "Collect Box When Circle"
   },
   "target": {
     "message": "Target: "
@@ -250,5 +250,38 @@
   },
   "reset": {
     "message": "Reset"
+  },
+  "shipsettings": {
+    "message": "Ship settings"
+  },
+  "changedroneformation": {
+    "message": "Change Drone Formation"
+  },
+  "attackformationslot": {
+    "message": "Attack Formation Slot"
+  },
+  "flyingformationslot": {
+    "message": "Flying Formation Slot"
+  },
+  "droneformations": {
+    "message": "Drone Formations(BETA)"
+  },
+  "shiphability": {
+    "message": "Ship Hability (BETA)"
+  },
+  "usehability": {
+    "message": "Use Hability"
+  },
+  "habilityslot": {
+    "message": "Hability slot"
+  },
+  "refreshsettings": {
+    "message": "Refresh settings"
+  },
+  "slotsAmmunition": {
+    "message": "Config of ammunition"
+  },
+  "autochangeammunition": {
+    "message": "Auto Change Ammunition"
   }
 }

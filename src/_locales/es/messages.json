@@ -51,7 +51,7 @@
     "message": "Activar funciones Delta. Algunas pueden contener Bugs"
   },
   "palladiumlogic": {
-    "message": "Función de Paladio (Solo funciona si Delta y Bot de Paladio están activos)"
+    "message": "Función de Paladio"
   },
   "shipconfigs": {
     "message": "Configuraciones de Nave"
@@ -81,10 +81,10 @@
     "message": "Incluir la lista de NPCs en la función Refresh"
   },
   "refreshtoreconnect": {
-    "message": "Refresh page when disconnected"
+    "message": "Refrescar la pagina cuando se desconecte"
   },
   "clearsettings": {
-    "message": "Limpiar configuraciones(Función Refresh)"
+    "message": "Limpiar configuraciones (Función Refresh)"
   },
   "reviveat": {
     "message": "Revivir en"
@@ -138,7 +138,7 @@
     "message": "Cofres Apocalipsis"
   },
   "collectboxwhencircle": {
-    "message": "Colectar mientras gira (Solo si Delta está activo)"
+    "message": "Colectar mientras gira"
   },
   "target": {
     "message": "Objetivo: "
@@ -250,5 +250,38 @@
   },
   "reset": {
     "message": "Reiniciar Estadísticas"
+  },
+  "shipsettings": {
+    "message": "Configuración de la Nave"
+  },
+  "changedroneformation": {
+    "message": "Cambiar la formación de los drones"
+  },
+  "attackformationslot": {
+    "message": "Slot de la formación de ataque"
+  },
+  "flyingformationslot": {
+    "message": "Slot de la formación de velocidad"
+  },
+  "droneformations": {
+    "message": "Formaciones de drones (BETA)"
+  },
+  "shiphability": {
+    "message": "Habilidad de nave (BETA)"
+  },
+  "usehability": {
+    "message": "Usar habilidad"
+  },
+  "habilityslot": {
+    "message": "Slot de la habilidad"
+  },
+  "refreshsettings": {
+    "message": "Configuración de refresh"
+  },
+  "slotsAmmunition": {
+    "message": "Configuración de la munición"
+  },
+  "autochangeammunition": {
+    "message": "Auto cambiar municion"
   }
 }

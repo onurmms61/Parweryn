@@ -1,6 +1,6 @@
 class ShipAttackHandler {
   static get ID() {
-    return 13529;//28759;
+    return 13529;
   }
 
   constructor() {
@@ -27,11 +27,11 @@ class ShipAttackHandler {
       }
 
       let npcshd = shipAttackCmd[Variables.selectMaxShd];
-
       if (ship) {
         ship.hp = shipAttackCmd[Variables.attackHp];
         ship.shd = shipAttackCmd[Variables.attackShd];
-
+        ship.targetID = attackerId;
+        
         if (attackerId != window.hero.id) {
           ship.isAttacked = true;
         } else {

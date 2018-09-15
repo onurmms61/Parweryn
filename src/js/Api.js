@@ -18,6 +18,76 @@ class Api {
     this.starSystem = [];
     this.workmap = null;
     this.changeConfigTime = $.now();
+    this.autoLocked = false;
+    this.lastAutoLock = $.now();
+    // QuickSlot stuff
+    this.habilityCoolDown = 1;
+    this.changeFormationTime = $.now();
+    this.formation = -1;
+    this.ammunition = -1;
+  }
+  
+  useHability(){
+    var cooldownlist = {"cyborg":310000,"solace":140000,"diminisher":161000,"venom":180000 ,"sentinel":235000 ,"spectrum":210000};
+    if(this.habilityCoolDown && $.now() - this.habilityCoolDown > cooldownlist[window.hero.skillName]){
+      this.quickSlot(window.globalSettings.habilitySlot);
+      this.habilityCoolDown = $.now();
+      return true;
+    }
+    return false;
+  }
+
+  getShipName(fullname){
+    let namelist = /(cyborg|venom|solace|diminisher|spectrum|sentinel)/;
+    let rname = namelist.exec(fullname);
+    if(rname != null){
+      return rname[0]
+    }else{
+      return false;
+    }
+  }
+
+  changeFormation(n){
+    if (this.changeFormationTime && $.now() - this.changeFormationTime > 3000){
+      this.changeFormationTime = $.now();
+      this.formation = n;
+      this.quickSlot(n);
+    }
+  }
+  
+  quickSlot(n){
+    if(n>=0 && n< 10){
+      let slots = [48,49,50,51,52,53,54,55,56,57];
+      this.pressKey(slots[n]);
+      setTimeout(() => {
+    	this.pressKey(slots[n]);
+      }, 700);
+    }
+  }
+  
+  pressKey(n) {
+	Injector.injectScript('document.getElementById("preloader").pressKey('+n+');');
+  }
+  
+  changeRefreshCount(n){
+    chrome.storage.local.set({"refreshCount": n});
+  }
+  
+  changeAmmunition(ammo) {
+    if(this.ammunition != ammo) {
+      if (ammo == 1) {
+        this.quickSlot(window.globalSettings.x1Slot);
+      } else if (ammo == 2) {
+        this.quickSlot(window.globalSettings.x2Slot);
+      } else if (ammo == 3) {
+        this.quickSlot(window.globalSettings.x3Slot);
+      } else if (ammo == 4) {
+        this.quickSlot(window.globalSettings.x4Slot);
+      } else if (ammo == 6) {
+        this.quickSlot(window.globalSettings.sabSlot);
+      }
+      this.ammunition = ammo;
+    }
   }
 
   lockShip(ship) {
@@ -83,17 +153,20 @@ class Api {
   }
 
   startLaserAttack() {
-    Injector.injectScript('document.getElementById("preloader").laserAttack()');
+    //Injector.injectScript('document.getElementById("preloader").laserAttack()');
+	this.pressKey(17);
   }
 
   jumpGate() {
-    Injector.injectScript('document.getElementById("preloader").jumpGate();');
+    //Injector.injectScript('document.getElementById("preloader").jumpGate();');
+    this.pressKey(74);
   }
 
   changeConfig() {
     if (this.changeConfigTime && $.now() - this.changeConfigTime > 5000) {
       this.changeConfigTime = $.now();
-      Injector.injectScript('document.getElementById("preloader").changeConfig();');
+      //Injector.injectScript('document.getElementById("preloader").changeConfig();');
+      this.pressKey(67);
     }
   }
 
@@ -121,6 +194,7 @@ class Api {
       this.attacking = false;
       this.triedToLock = false;
       this.lockedShip = null;
+      this.ammunition = -1;
     } else if (target == "box") {
       this.targetBoxHash = null;
     } else if (target == "all") {
@@ -129,12 +203,13 @@ class Api {
       this.triedToLock = false;
       this.lockedShip = null;
       this.targetBoxHash = null;
+      this.ammunition = -1;
     }
   }
 
-  jumpInGG(id, settings) { //Usage: api.jumpInGG(70, window.settings.kappa);
+  jumpInGG(gateType, settings) { //Usage: api.jumpInGG(70, window.settings.kappa);
     if (settings) {
-      let gate = this.findNearestGatebyGateType(id);
+      let gate = this.findNearestGatebyGateType(gateType);
       if (gate.gate) {
         let x = gate.gate.position.x;
         let y = gate.gate.position.y;
@@ -168,12 +243,13 @@ class Api {
   }
 
   jumpAndGoBack(gateId){
-    let hasJumped = this.jumpInGateByID(gateId);
     if (window.globalSettings.workmap != null) {
       this.workmap = window.globalSettings.workmap;
     } else {
       this.workmap = window.hero.mapId;
     }
+    let hasJumped = this.jumpInGateByID(gateId);
+    
     return hasJumped;
   }
 
@@ -187,12 +263,12 @@ class Api {
         ship.name == "-=[ Kristallon ]=- δ19")) {
         window.settings.resetTargetWhenHpBelow25Percent=false;
         if (shipsCount > 1) {
-          window.settings.setNpc(ship.name, true);
+          window.settings.setNpc(ship.name, "0");
           if (this.targetShip == ship){
             this.resetTarget("enemy");
           }
         } else {
-          window.settings.setNpc(ship.name, false);
+          window.settings.setNpc(ship.name, "1");
           this.targetShip = ship;
         }
       }
@@ -206,12 +282,12 @@ class Api {
       if (ship && (ship.name == "-=[ Devourer ]=- ζ25" || ship.name == "-=[ Devourer ]=- ζ27")) {
         window.settings.resetTargetWhenHpBelow25Percent=false;
         if (shipsCount > 1) {
-          window.settings.setNpc(ship.name, true);
+          window.settings.setNpc(ship.name, "0");
           if (this.targetShip == ship) {
             this.resetTarget("enemy");
           }
         } else {
-          window.settings.setNpc(ship.name, false);
+          window.settings.setNpc(ship.name, "1");
           this.targetShip = ship;
         }
       }
@@ -224,12 +300,12 @@ class Api {
       if (ship && (ship.name == "-=[ Battleray ]=-") && ship.distanceTo(window.hero.position) < 700) {
         let shipsCount = this.countNpcAroundByType("-=[ Interceptor ]=-", 600);
         if (shipsCount > 1 && !(lockedShip && lockedShip.percentOfHp > 80 && lockedShip.name == "-=[ Battleray ]=-")) {
-          window.settings.setNpc(ship.name, true);
+          window.settings.setNpc(ship.name, "0");
           if (this.targetShip == ship){
             this.resetTarget("enemy");
           }
         } else {
-          window.settings.setNpc(ship.name, false);
+          window.settings.setNpc(ship.name, "1");
           this.targetShip = ship;
         }
       }
@@ -313,8 +389,9 @@ class Api {
   
 
   findNearestShip() {
-    let minDist = window.settings.palladium ? window.settings.npcCircleRadius : 100000;
+    let minDist = 100000;
     let finalShip;
+    let minPriority = 1;
 
     if (!window.settings.killNpcs) {
       return {
@@ -326,12 +403,20 @@ class Api {
     for (let property in this.ships) {
       let ship = this.ships[property];
       ship.update();
-      let dist = ship.distanceTo(window.hero.position);
-
-      if (dist < minDist) {
-        if (ship.isNpc && window.settings.getNpc(ship.name) && !ship.isAttacked) {
-          finalShip = ship;
-          minDist = dist;
+      if (ship.isNpc) {
+	    let npcdata =  window.settings.getNpc(ship.name);
+	    console.log(ship.name);
+	    console.log(npcdata);
+	    let priority = npcdata["priority"];
+        if (priority >= minPriority) {
+	      let dist = ship.distanceTo(window.hero.position);
+          if (dist < minDist) {
+            if (!ship.isAttacked) {
+              finalShip = ship;
+              minDist = dist;
+              minPriority = priority;
+            }
+          }
         }
       }
     }
@@ -386,13 +471,13 @@ class Api {
     };
   }
 
-  findNearestGatebyGateType(gateId) {
+  findNearestGatebyGateType(gateType) {
     let minDist = 100000;
     let finalGate;
 
     this.gates.forEach(gate => {
       let dist = window.hero.distanceTo(gate.position);
-      if (dist < minDist && gate.gateType == gateId) {
+      if (dist < minDist && gate.gateType == gateType) {
         finalGate = gate;
         minDist = dist;
       }
@@ -613,7 +698,7 @@ class Api {
      portals35.push(new Portal(150000304,16)); //3-5 | 4-4
      portals35.push(new Portal(150000317,29)); //3-5 | 4-5
      portals35.push(new Portal(150000305,26)); //3-5 | 3-6
-     portals35.push(new Portal(150000307,28)); //3-5 | 3-7
+     portals35.push(new Portal(150000307,27)); //3-5 | 3-7
      this.starSystem.push(new Map(25, portals35));
      let portals36 = [];
      portals36.push(new Portal(150000306,25)); //3-6 | 3-5
@@ -626,7 +711,7 @@ class Api {
      let portals38 = [];
      portals38.push(new Portal(150000312,27)); //3-8 | 3-7
      portals38.push(new Portal(150000310,26)); //3-8 | 3-6
-     this.starSystem.push(new Map(24, portals38));
+     this.starSystem.push(new Map(28, portals38));
   }
 
   completeRute(imcompleteRute){

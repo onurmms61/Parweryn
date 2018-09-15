@@ -20,9 +20,10 @@ class HeroInitHandler {
       }
       window.hero.maxHp = heroJson[Variables.heroInitMaxHp];
       window.hero.hp = heroJson[Variables.heroInitHp];
-      window.hero.maxShd = heroJson[Variables.heroInitMaxShd]; // _-B2O
+      window.hero.maxShd = heroJson[Variables.heroInitMaxShd];
       window.hero.shd = heroJson["shield"];
       window.hero.mapId = heroJson["mapId"];
+      window.hero.skillName  = a.getShipName(heroJson["typeId"]);
 
       if (window.hero.mapId == 16 || window.hero.mapId == 29 || window.hero.mapId == 91 || window.hero.mapId == 93) {
         window.b1 = 42000 / 300;
