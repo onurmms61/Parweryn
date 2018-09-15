@@ -311,6 +311,62 @@ class Api {
       }
     }
   }
+  
+  prodegitgörev() {
+   for (let property in this.ships) {
+      let ship = this.ships[property];
+      if (ship && (ship.name == "-=[ Cubikon ]=-") && ship.distanceTo(window.hero.position) < 1000) {
+        let shipsCount = this.countNpcAroundByType("-=[ Protegit ]=-", 2000);
+        if (shipsCount > 1 && !(lockedShip && lockedShip.percentOfHp < 5 && lockedShip.name == "-=[ Cubikon ]=-")) {
+          window.settings.setNpc(ship.name, true);
+		  if (lockedShip && lockedShip.percentOfHp < 99 && lockedShip.name == "-=[ Cubikon ]=-"){
+			  this.resetTarget("enemy");
+			  window.settings.setNpc(ship.name, false);
+		  }
+          if (this.targetShip == ship){
+            this.resetTarget("enemy");
+          }
+        } else {
+          window.settings.setNpc(ship.name, false);
+          this.targetShip = ship;
+        }
+      }
+    }
+  }
+  tallinfix() {
+   for (let property in this.ships) {
+      let ship = this.ships[property];
+      if (ship && (ship.name == "-=[ Kristallin ]=-") && ship.distanceTo(window.hero.position) < 5000) {
+        let shipsCount = this.countNpcAroundByType("-=[ Kristallin ]=-", 5000);
+        if (shipsCount > 2) { 
+          window.settings.setNpc(ship.name, true);
+          if (this.targetShip == ship){
+            this.resetTarget("enemy");
+          }
+        } else {
+          window.settings.setNpc(ship.name, false);
+          this.targetShip = ship;
+        }
+      }
+    }
+  }
+  bostallinfix() {
+   for (let property in this.ships) {
+      let ship = this.ships[property];
+      if (ship && (ship.name == "-=[ Boss Kristallin ]=-") && ship.distanceTo(window.hero.position) < 5000) {
+        let shipsCount = this.countNpcAroundByType("-=[ Boss Kristallin ]=-", 5000);
+        if (shipsCount > 1) { 
+          window.settings.setNpc(ship.name, true);
+          if (this.targetShip == ship){
+            this.resetTarget("enemy");
+          }
+        } else {
+          window.settings.setNpc(ship.name, false);
+          this.targetShip = ship;
+        }
+      }
+    }
+  }
 
   countNpcAroundByType(type, distance){
     let shipsCount = Object.keys(this.ships).length;

@@ -1,287 +1,287 @@
 {
   "toshidescription": {
-    "message": "A cheat/tool/bot/whatever for a browser flash game named DarkOrbit. It does some pretty neat stuff and is still under heavy development.",
+    "message": "Чит/инструмент/бот/что угодно для браузерной флеш-игры под названием DarkOrbit. Он делает некоторые довольно интересные вещи и все еще находится в интенсивной разработке.",
     "description": "Toshinou description"
   },
   "desextension": {
-    "message": "Bot for DarkOrbit, created by Freshek.",
-    "description": "Toshinou Extension description"
+    "message": "Бот для DarkOrbit, созданный Freshek.",
+    "description": "Описание расширения Toshinou"
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "Внешний вид"
   },
   "translateby": {
     "message": "",
-    "description": "Toshinou Extension description"
+    "description": "Описание расширения Toshinou"
   },
   "discordserver": {
-    "message": "Discord Server"
+    "message": "Сервер Discord"
   },
   "saveall": {
-    "message": "Save All"
+    "message": "Сохранить все"
   },
   "headercolor": {
-    "message": "Header color"
+    "message": "Цвет заголовка"
   },
   "opacity": {
-    "message": "opacity"
+    "message": "Прозрачность"
   },
   "windowbackgroundcolor": {
-    "message": "Window background color"
+    "message": "Фон окна"
   },
   "statisticwindow": {
-    "message": "Statistic window"
+    "message": "Окно статистики"
   },
   "windowstotabs": {
-    "message": "Tabs instead of windows"
+    "message": "Вкладки вместо окон"
   },
   "showruntime": {
-    "message": "Show runtime"
+    "message": "Время работы"
   },
   "speedformat": {
-    "message": "Speed format"
+    "message": "Формат скорости"
   },
   "hour": {
-    "message": "hour"
+    "message": "в час"
   },
   "min": {
-    "message": "min"
+    "message": "в минуту"
   },
   "deltaoptions": {
-    "message": "Enable delta functions. Some may have bugs"
+    "message": "Дельта функции. Возможно ошибки"
   },
   "palladiumlogic": {
-    "message": "Palladium logic (It works only if delta and palladium bot are active)"
+    "message": "Логика палладиума. Работает при активной ДЕЛЬТЕ"
   },
   "shipconfigs": {
-    "message": "Ship Configs"
+    "message": "Конфигурации корабля"
   },
   "attackconfig": {
-    "message": "Attack Config:"
+    "message": "Конфигурация атаки:"
   },
   "flyingconfig": {
-    "message": "Flying Config:"
+    "message": "Конфигурация полёта:"
   },
   "advanced": {
-    "message": "Advanced (beginners, go away!)"
+    "message": "Продвинутым (Новичкам не трогать)"
   },
   "logictick": {
-    "message": "Logic tick (ms)"
+    "message": "Время на логику (мс)"
   },
   "refreshsettings": {
-    "message": "Refresh page function settings"
+    "message": "Обновление страницы"
   },
   "enablerefresh": {
-    "message": "Enable refresh function"
+    "message": "Включить функцию обновления"
   },
   "refreshtime": {
-    "message": "Refresh interval (min)"
+    "message": "Интервал обновления в минутах"
   },
   "enablenpcblocklist": {
-    "message": "Include npc black list into refresh page function"
+    "message": "Сохранить настройки ЧЕРНОГО СПИСКА при обновлении страницы"
   },
   "refreshtoreconnect": {
-    "message": "Refresh page when disconnected"
+    "message": "Перезагрузка страницы при дисконекте"
   },
   "clearsettings": {
-    "message": "Clear settings storage (Refresh function)"
+    "message": "Очистить сохраненные настройки (Функция обновления)"
   },
   "reviveat": {
-    "message": "Revive at"
+    "message": "Возрожение на"
   },
   "base": {
-    "message": "Base"
+    "message": "База"
   },
   "gate": {
-    "message": "Gate"
+    "message": "Портал"
   },
   "spot": {
-    "message": "Spot"
+    "message": "На месте"
   },
   "norevive": {
-    "message": "No revive"
+    "message": "Не возрождаться"
   },
   "revivelimit": {
-    "message": "Revive limit"
+    "message": "Лимит возрождений"
   },
   "workmap": {
-    "message": "Work Map"
+    "message": "Карта полета"
   },
   "any": {
-    "message": "Any"
+    "message": "Любая"
   },
   "onlyworkdelta": {
-    "message": "(Only works if delta active)"
+    "message": "Работает если ДЕЛЬТА активна"
   },
   "boxsettings": {
-    "message": "Box settings"
+    "message": "Настройка сбора"
   },
   "bonusbox": {
-    "message": "Bonus box"
+    "message": "Бонусные коробки"
   },
   "materials": {
-    "message": "Materials"
+    "message": "Материалы"
   },
   "cargobox": {
-    "message": "Cargo box"
+    "message": "Ресурсы с NPCs"
   },
   "greenorgoldbooty": {
-    "message": "Green | Gold booty boxes"
+    "message": "Зеленые | Золотые сундуки"
   },
   "redbooty": {
-    "message": "Red booty boxes"
+    "message": "Красные сундуки"
   },
   "bluebooty": {
-    "message": "Blue booty boxes"
+    "message": "Синии сундуки"
   },
   "masquebooty": {
-    "message": "Apocalyptic booty boxes"
+    "message": "Апокалиптические сундуки"
   },
   "collectboxwhencircle": {
-    "message": "Collect Box When Circle"
+    "message": "Сбор коробок во время кручения"
   },
   "target": {
-    "message": "Target: "
+    "message": "Цель: "
   },
   "hp": {
-    "message": "HP: "
+    "message": "Прочность: "
   },
   "shd": {
-    "message": "SHD: "
+    "message": "Щит: "
   },
   "palladiumbot": {
-    "message": "Palladium Bot"
+    "message": "Палладиум бот"
   },
   "moverandomly": {
-    "message": "Move randomly"
+    "message": "Случайные перемещения"
   },
   "killnpcs": {
-    "message": "Kill NPCs"
+    "message": "Атаковать NPC"
   },
   "fleefromenemy": {
-    "message": "Flee from enemy"
+    "message": "Убегать от врага"
   },
   "avoidattackednpc": {
-    "message": "Avoid attacked NPCs<br>(Dont use with PET)"
+    "message": "Избегать атаки NPC(Не использовать с PET)"
   },
   "circle": {
-    "message": "Circle"
+    "message": "Крутить"
   },
   "circleradius": {
-    "message": "Circle radius <span> (500px)</span>"
+    "message": "Радиус кручения <span> (500px)</span>"
   },
   "dontcirclewhenhp": {
-    "message": "Don't circle when HP < 25%"
+    "message": "Не крутить при прочности < 25%"
   },
   "repairwhenhp": {
-    "message": "Repair when HP < <span> (10%)</span>"
+    "message": "Восстонавливать прочность при < <span> (10%)</span>"
   },
   "jumpandreturn": {
-    "message": "Jump And Return"
+    "message": "Прыжок и возврат"
   },
   "autochangeconfig": {
-    "message": "Auto Change Config"
+    "message": "Смена конфигураций"
   },
   "dodgethecbs": {
-    "message": "Dodge the CBS"
+    "message": "Избегать базы"
   },
   "resettarget": {
-    "message": "Reset Target when HP < 25%"
+    "message": "Сброс цели при прочности < 25%"
   },
   "savesettingsandenable": {
-    "message": "Save settings & Enable refresh"
+    "message": "Сохранить настройки и включить обновление"
   },
   "attackdetails": {
-    "message": "Attack Details"
+    "message": "Подробности атаки"
   },
   "general": {
-    "message": "General"
+    "message": "Основное"
   },
   "gghelper": {
-    "message": "GG Helper"
+    "message": "GG помощник"
   },
   "ggbot": {
-    "message": "GG Bot (Testing)"
+    "message": "GG Бот (Тестируется)"
   },
   "jumpin": {
-    "message": "Jump in"
+    "message": "Прыгнуть в"
   },
   "minimap": {
-    "message": "Minimap"
+    "message": "Миникарта"
   },
   "excludenpcto": {
-    "message": "Exclude NPC to attack"
+    "message": "Исключение атаки"
   },
   "statistic": {
-    "message": "Statistic"
+    "message": "Статистика"
   },
   "startat": {
-    "message": "Start at: "
+    "message": "Начал в: "
   },
   "credits": {
-    "message": "Credits: "
+    "message": "Кредиты: "
   },
   "uridium": {
-    "message": "Uridium: "
+    "message": "Уридиум: "
   },
   "ggenergy": {
-    "message": "GG Energy: "
+    "message": "GG энергия: "
   },
   "ammo": {
-    "message": "Ammo: "
+    "message": "Боеприпасы: "
   },
   "experiencie": {
-    "message": "Experience: "
+    "message": "Опыт: "
   },
   "honor": {
-    "message": "Honor: "
+    "message": "Честь "
   },
   "rank": {
-    "message": "Rank Points: "
+    "message": "Очки ранга: "
   },
   "death": {
-    "message": "Death count: "
+    "message": "Количество смертей: "
   },
   "speed": {
-    "message": "Speed: "
+    "message": "Скорость: "
   },
   "runtime": {
-    "message": "Runtime: "
+    "message": "Время выполнения: "
   },
   "reset": {
-    "message": "Reset"
+    "message": "Сбросить"
   },
   "shipsettings": {
-    "message": "Ship settings"
+    "message": "Настройки корабля"
   },
   "changedroneformation": {
-    "message": "Change Drone Formation"
+    "message": "Смена формации дроидов"
   },
   "attackformationslot": {
-    "message": "Attack Formation Slot"
+    "message": "Формация Атаки (слот)"
   },
   "flyingformationslot": {
-    "message": "Flying Formation Slot"
+    "message": "Формация полета (слот)"
   },
   "droneformations": {
-    "message": "Drone Formations(BETA)"
+    "message": "Формации дроидов (БЕТА)"
   },
   "shiphability": {
-    "message": "Ship Hability (BETA)"
+    "message": "Навык корабля (БЕТА)"
   },
   "usehability": {
-    "message": "Use Hability"
+    "message": "Использовать навык"
   },
   "habilityslot": {
-    "message": "Hability slot"
+    "message": "Слот навыка"
   },
   "refreshsettings": {
-    "message": "Refresh settings"
+    "message": "Настройки обновления"
   },
   "slotsAmmunition": {
-    "message": "Config of ammunition"
+    "message": "Конфигурации амуниции "
   },
   "autochangeammunition": {
-    "message": "Auto Change Ammunition"
+    "message": "Автоматическая смена амуниции"
   }
 }

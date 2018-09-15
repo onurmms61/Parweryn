@@ -7,14 +7,6 @@ class GeneralSettingsWindow {
 
     let controls = [
       {
-        name: 'palladium',
-        labelText: chrome.i18n.getMessage("palladiumbot"),
-        appendTo: this.botSettingsWindow,
-        event: function () {
-          window.settings.palladium = this.checked;
-        }
-      },
-      {
         name: 'moveRandomly',
         labelText: chrome.i18n.getMessage("moverandomly"),
         appendTo: this.botSettingsWindow,
@@ -60,6 +52,14 @@ class GeneralSettingsWindow {
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.avoidAttackedNpcs = this.checked;
+        }
+      },
+	  {
+        name: 'gatestonpc',
+          labelText: chrome.i18n.getMessage("gatestonpc"),
+          appendTo: this.botSettingsWindow,
+          event: function () {
+			window.settings.gatestonpc = this.checked;
         }
       },
       {

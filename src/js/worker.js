@@ -108,6 +108,12 @@ function init() {
   window.statisticWindow = new StatisticWindow();
   window.statisticWindow.createWindow();
   
+  window.autolockWindow = new AutolockWindow();
+  window.autolockWindow.createWindow()
+  
+  window.normalbotlarwindow = new NormalBotlarWindow();
+  window.normalbotlarwindow.createWindow()
+  
   Injector.injectScriptFromResource("res/injectables/HeroPositionUpdater.js");
 
   let npcList = window.globalSettings.npcList;
@@ -133,6 +139,28 @@ function init() {
       } else {
         $('.cnt_btn_play .btn_play').html("Stop").removeClass('in_play').addClass('in_stop');
         window.settings.pause = false;
+      }
+    }
+	
+	if (key == "x" && (!window.settings.autoAttackNpcs || (!api.lastAutoLock || $.now() - api.lastAutoLock > 1000)) || 
+        key == "z" && (!window.settings.autoAttack || (!api.lastAutoLock || $.now() - api.lastAutoLock > 1000))) {
+      let maxDist = 1000;
+      let finDist = 1000000;
+      let finalShip;
+
+      for (let property in api.ships) {
+        let ship = api.ships[property];
+        let dist = ship.distanceTo(window.hero.position);
+
+        if (dist < maxDist && dist < finDist && ((ship.isNpc && window.settings.lockNpc && key == "x" && (!window.settings.excludeNpcs || window.settings.getNpc(ship.name))) || (!ship.isNpc && ship.isEnemy && window.settings.lockPlayers && key == "z"))) {
+          finalShip = ship;
+          finDist = dist;
+        }
+      }
+
+      if (finalShip != null) {
+        api.lockShip(finalShip);
+        api.lastAutoLock = $.now();
       }
     }
   });
@@ -513,6 +541,65 @@ if (window.settings.fleeFromEnemy) {
     }
   }
   
+  if (window.settings.korsanbot) {
+    let korsanbotBlackList = [
+    "-=[ Battleray ]=-",
+    "( Uber Annihilator )", 
+    "( Uber Saboteur )", 
+    "( Uber Barracuda )",
+    ];
+    korsanbotBlackList.forEach(npc => {
+      window.settings.setNpc(npc, "0");
+    });
+		window.settings.killNpcs = true;
+		window.settings.gatestonpc = true;
+		window.settings.moveRandomly = true;
+  }
+  if (window.settings.karantina){
+	  if (api.lockedShip && api.lockedShip.percentOfHp > 3 && api.lockedShip.name == "-={ Gygerim Overlord }=-"){
+			api.resetTarget("enemy");
+		}
+	  let percenlife = MathUtils.percentFrom(window.hero.hp, window.hero.maxHp);
+      if (percenlife < 100) {
+        api.ggkarantinafix();
+	    api.ggkarantinafixv()		
+      } 
+	  
+  }
+  
+  if (window.settings.cubibot) {
+    let cubibotblacklist = [
+    "-=[ Battleray ]=-",
+	"-=[ Kristallin ]=-",
+    "-=[ Kristallon ]=-",
+	"..::{ Boss Kristallin }::..",
+	"-=[ Plagued Kristallin ]=-",
+    "( Uber Annihilator )", 
+    "( Uber Saboteur )", 
+    "( Uber Barracuda )",
+    ];
+    cubibotblacklist.forEach(npc => {
+      window.settings.setNpc(npc, "0");
+    });
+
+    if(window.settings.cubibot){
+		window.settings.killNpcs = true;
+		window.settings.moveRandomly = true;
+		window.settings.circleNpc = true;
+		
+		if (api.lockedShip && api.lockedShip.percentOfHp > 5 && api.lockedShip.name == "-=[ Cubikon ]=-"){
+			api.resetTarget("enemy");
+		}
+	 
+	  let percenlife = MathUtils.percentFrom(window.hero.hp, window.hero.maxHp);
+      if (percenlife < 99) {
+        api.prodegitgörev;	 
+        api.bostallinfix;	
+        api.tallinfix;			
+      } 
+    }
+  }
+  
   /*Dodge the CBS*/
   if (window.settings.dodgeTheCbs && api.battlestation != null) {
     if (api.battlestation.isEnemy) {
@@ -548,6 +635,18 @@ if (window.settings.fleeFromEnemy) {
   } else if (api.targetBoxHash == null && api.targetShip == null && window.movementDone && window.settings.moveRandomly && window.settings.palladium) {
     x = MathUtils.random(13000, 30400);
     y = MathUtils.random(19000, 25500)
+  }
+  if (api.targetBoxHash == null && api.targetShip == null && window.movementDone && window.settings.moveRandomly && window.settings.cubibot  ) { /* cubi sol */ 
+		x = MathUtils.random(7000, 14000);
+		y = MathUtils.random(3000, 8500);	
+  }
+	 
+  if (api.targetBoxHash == null && api.targetShip == null && window.movementDone && window.settings.moveRandomly && window.settings.korsanbot && window.settings.korsanbotsolport ) { /* 5-2 sol */ 
+		x = MathUtils.random(600, 4600);
+		y = MathUtils.random(1500, 11500);	
+  } else if (api.targetBoxHash == null && api.targetShip == null && window.movementDone && window.settings.moveRandomly && window.settings.korsanbot){
+	  x = MathUtils.random(15900, 20300);
+	  y = MathUtils.random(1100, 11100);
   }
 
   if (api.targetShip && window.settings.killNpcs && api.targetBoxHash == null) {
@@ -607,7 +706,7 @@ if (window.settings.fleeFromEnemy) {
       }
     } else if (window.settings.ggbot && window.settings.resetTargetWhenHpBelow25Percent && api.lockedShip && api.lockedShip.percentOfHp < 25 && api.lockedShip.id == api.targetShip.id ) {
       api.resetTarget("enemy");
-    } else if (dist > 300 && api.lockedShip && api.lockedShip.id == api.targetShip.id & !window.settings.circleNpc) {
+    } else if (dist > 300 && api.lockedShip && api.lockedShip.id == api.targetShip.id & !window.settings.circleNpc && !window.settings.gatestonpc) {
       x = api.targetShip.position.x + MathUtils.random(-200, 200);
       y = api.targetShip.position.y + MathUtils.random(-200, 200);
     } else if (api.lockedShip && api.lockedShip.id == api.targetShip.id) {
@@ -631,6 +730,27 @@ if (window.settings.fleeFromEnemy) {
           }
         }
       }
+	  if (window.settings.gatestonpc) {
+		let enemy = api.targetShip.position; 
+		let gate = api.findNearestGate();	
+		let distgate = window.hero.distanceTo(gate.gate.position);
+		if (dist > 500 && api.lockedShip.percentOfHp == 100 ){
+					api.resetTarget("enemy");
+		} else if (gate.gate && api.lockedShip.percentOfHp < 97 ) {
+			if (distgate > 300){
+				let x = gate.gate.position.x + 1;
+				let y = gate.gate.position.y + 1;
+				api.move(x, y);
+				window.movementDone = false;
+				return;
+			} else if (enemy.distanceTo(gate.gate.position) < 1000 && api.lockedShip.id == api.targetShip.id){
+				if (api.targetShip == null){
+					window.movementDone = false;
+					return;
+				}
+			} 						
+		}
+	  }
     } else {
       api.resetTarget("enemy");
     }

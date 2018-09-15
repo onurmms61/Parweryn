@@ -252,30 +252,58 @@
     "message": "Sifirla"
   },
   "shipsettings": {
-    "message": "Ship settings"
+    "message": "Gemi Ayarları"
   },
   "changedroneformation": {
-    "message": "Change Drone Formation"
+    "message": "Droid Uçuş Düzeni"
   },
   "attackformationslot": {
-    "message": "Attack Formation Slot"
+    "message": "Saldırı Uçuş Düzeni"
   },
   "flyingformationslot": {
-    "message": "Flying Formation Slot"
+    "message": "Uçarken Uçuş Düzeni"
   },
   "droneformations": {
-    "message": "Drone Formations(BETA)"
+    "message": "Droid Uçuş Düzeni(BETA)"
   },
   "shiphability": {
-    "message": "Ship Hability (BETA)"
+    "message": "Gemi Özelliği (BETA)"
   },
   "usehability": {
-    "message": "Use Hability"
+    "message": "Özelliği Aktif Et"
   },
   "habilityslot": {
-    "message": "Hability slot"
+    "message": "Özellik Yeri"
   },
   "refreshsettings": {
-    "message": "Refresh settings"
+    "message": "Ayarları Sıfırla"
+  },
+  "lockNpc": {
+    "message": "NPCleri Tut (x) "
+  },
+  "lockPlayers": {
+    "message": "İnsanları Tut (z) "
+  },
+  "korsanbot": {
+    "message": "5-2 korsan(sol kapıya bırakın) "
+  },
+  "korsanbotkisim": {
+    "message": "Korsan Bot "
+  },
+  "gatestonpc": {
+    "message": "Npcs Kapıya Çek Kes "
+  },
+  "cubibot": {
+    "message": "Prodegit Botudur(elmas var ise elmasta kullanın "
+  },
+  "slotsAmmunition": {
+    "message": "Lazer Yeri "
+  },
+  "autochangeammunition": {
+    "message": "Lazer Değiştirmeyi Aktif Et"
+  },
+  "korsanbotaktif": {
+    "message": "5-2 korsan(sol kapıya bırakın)  "
   }
+  
 }
