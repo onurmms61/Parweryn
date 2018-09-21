@@ -116,14 +116,20 @@ function saveOptions(e) {
     blueBooty:          $("#blueBooty").prop('checked'),
     masqueBooty:        $("#masqueBooty").prop('checked'),
     collectBoxWhenCircle: $("#collectBoxWhenCircle").prop('checked'),
-    workmap: $("#workmap").val(),
-    npcList: npcList,
+    workmap:            $("#workmap").val(),
+    npcList:            npcList,
     changeAmmunition:   $("#changeAmmunition").prop('checked'),
-    x1Slot:    $("#x1Slot").val(),
-    x2Slot:    $("#x2Slot").val(),
-    x3Slot:    $("#x3Slot").val(),
-    x4Slot:    $("#x4Slot").val(),
-    sabSlot:    $("#sabSlot").val()
+    x1Slot:             $("#x1Slot").val(),
+    x2Slot:             $("#x2Slot").val(),
+    x3Slot:             $("#x3Slot").val(),
+    x4Slot:             $("#x4Slot").val(),
+    sabSlot:            $("#sabSlot").val(),
+    stopafterxminutes:  $("#stopafterxminutes").val(),
+    waitafterRepair:    $("#waitafterRepair").val(),
+    useHabilityAegis : $("#useHabilityAegis").prop('checked'),
+    HabilitySlotAegisHP : $("#HabilitySlotAegisHP").val(),
+    HabilitySlotAegisSHD : $("#HabilitySlotAegisHP").val(),
+    HabilitySlotAegisBeacon : $("#HabilitySlotAegisBeacon").val()
   };
 
   chrome.storage.local.set(elements);
@@ -143,7 +149,7 @@ $('[data-resource]').each(function() {
                 "useHability","habilitySlot", "changeFormation","flyingFormation",
                 "attackFormation","reviveType", "reviveLimit",
                 "bonusBox", "materials", "cargoBox", "greenOrGoldBooty",
-                "redBooty", "blueBooty", "masqueBooty", "collectBoxWhenCircle", "workmap", "npcList", "changeAmmunition", "x1Slot", "x2Slot", "x3Slot", "x4Slot", "sabSlot"];
+                "redBooty", "blueBooty", "masqueBooty", "collectBoxWhenCircle", "workmap", "npcList", "changeAmmunition", "x1Slot", "x2Slot", "x3Slot", "x4Slot", "sabSlot", "stopafterxminutes", "waitafterRepair", "useHabilityAegis", "HabilitySlotAegisHP", "HabilitySlotAegisSHD", "HabilitySlotAegisBeacon"];
 
   var onGet = items => {
 
@@ -249,6 +255,24 @@ $('[data-resource]').each(function() {
     }
     if (items.sabSlot) {
       $("#sabSlot").val(items.sabSlot);
+    }
+    if (items.stopafterxminutes) {
+      $("#stopafterxminutes").val(items.stopafterxminutes);
+    }
+    if (items.waitafterRepair) {
+      $("#waitafterRepair").val(items.waitafterRepair);
+    }
+    if (items.useHabilityAegis) {
+      $("#useHabilityAegis").prop('checked', true);
+    }
+    if (items.HabilitySlotAegisHP){
+      $("#HabilitySlotAegisHP").val(items.HabilitySlotAegisHP);
+    }
+    if (items.HabilitySlotAegisSHD){
+      $("#HabilitySlotAegisSHD").val(items.HabilitySlotAegisSHD);
+    }
+    if (items.HabilitySlotAegisBeacon){
+      $("#HabilitySlotAegisBeacon").val(items.HabilitySlotAegisBeacon);
     }
     if (items.npcList) {
       var knownNpcList = items.npcList;

@@ -8,7 +8,6 @@ class ShipAttackHandler {
       var shipAttackCmd = JSON.parse(e.detail);
       let attackerId = shipAttackCmd[Variables.attackerId];
       let attackedShipId = shipAttackCmd[Variables.attackedId];
-
       let ship = a.ships[attackedShipId];
 
       if (attackerId == window.hero.id) {

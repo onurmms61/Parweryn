@@ -1,90 +1,90 @@
 ﻿{
   "toshidescription": {
-    "message": "Um cheat/ferramenta/bot para um site flash game chamado DarkOrbit. Ele faz algumas coisas bem legais e ainda est sob forte desenvolvimento.",
-    "description": "descrio do Toshinou"
+    "message": "Uma trapaça/ferramenta/bot para um jogo chamado DarkOrbit. Ele faz algumas coisas bem legais e ainda está sob forte desenvolvimento.",
+    "description": "Descrição do Toshinou"
   },
   "desextension": {
     "message": "Bot para DarkOrbit, criado por Freshek.",
-    "description": "Toshinou Extension description"
+    "description": "Descrição da Extensão Toshinou"
   },
   "appearance": {
-    "message": "Aparncia"
+    "message": "Aparência"
   },
   "translateby": {
-    "message": "",
-    "description": "Toshinou Extension description"
+    "message": "Traduzido por João",
+    "description": "Descrição da Extensão Toshinou"
   },
   "discordserver": {
-    "message": "Servidor Discord"
+    "message": "Servidor de Discord"
   },
   "saveall": {
-    "message": "Salvar tudo"
+    "message": "Salvar Tudo"
   },
   "headercolor": {
-    "message": "Cor do titulo"
+    "message": "Cor do Título"
   },
   "opacity": {
-    "message": "opacidade"
+    "message": "Opacidade"
   },
   "windowbackgroundcolor": {
-    "message": "Cor do fundo da janela"
+    "message": "Cor do Fundo da Janela"
   },
   "statisticwindow": {
-    "message": "Estatsticas da Janela"
+    "message": "Estatísticas da Janela"
   },
   "windowstotabs": {
-    "message": "Guias em vez de janelas"
+    "message": "Guias em vez de Janelas"
   },
   "showruntime": {
-    "message": "Mostrar tempo de execuo"
+    "message": "Mostrar Tempo de Execução"
   },
   "speedformat": {
-    "message": "Formato de velocidade"
+    "message": "Formato da Velocidade"
   },
   "hour": {
-    "message": "hora"
+    "message": "Hora"
   },
   "min": {
-    "message": "minutos"
+    "message": "Minutos"
   },
   "deltaoptions": {
-    "message": "Ativar funes delta. Alguns podem ter erros"
+    "message": "Ativar Funções Delta. Alguns podem conter erros"
   },
   "palladiumlogic": {
-    "message": "Lgica do palladium (funciona apenas se o delta e o palladium bot estiverem ativos)"
+    "message": "Lógica do Palladium"
   },
   "shipconfigs": {
-    "message": "Configuraes da nave"
+    "message": "Configurações da Nave"
   },
   "attackconfig": {
-    "message": "Configurao de ataque:"
+    "message": "Configuração de Ataque:"
   },
   "flyingconfig": {
-    "message": "Configurao de correr:"
+    "message": "Configuração de Velocidade:"
   },
   "advanced": {
-    "message": "Avanado (iniciantes, v embora!)"
+    "message": "Avançado (iniciantes, vão embora!)"
   },
   "logictick": {
     "message": "Logica de tick (ms)"
   },
   "refreshsettings": {
-    "message": "Atualize as configuraes das funes da pgina"
+    "message": "Atualize as Configurações das Funções da Página"
   },
   "enablerefresh": {
-    "message": "Ativar funo de atualizao"
+    "message": "Ativar Função de Atualização"
   },
   "refreshtime": {
-    "message": "Intervalo de atualizao (minutos)"
+    "message": "Intervalo de Atualização (min)"
   },
   "enablenpcblocklist": {
-    "message": "Incluir lista negra do npc na funo de atualizao da página"
+    "message": "Incluir Lista Negra do NPC na Função de Atualização da Página"
   },
   "refreshtoreconnect": {
-    "message": "Atualizar a página quando for disconectado."
+    "message": "Atualizar a Página quando for Desconectado."
   },
   "clearsettings": {
-    "message": "Limpar armazenamento de configurações (Funo de atualizao)"
+    "message": "Limpar Armazenamento de Configurações (Função de Atualização)"
   },
   "reviveat": {
     "message": "Reviver em"
@@ -99,46 +99,46 @@
     "message": "Local"
   },
   "norevive": {
-    "message": "No reviver"
+    "message": "Não Reviver"
   },
   "revivelimit": {
-    "message": "Limite de reviver"
+    "message": "Limite de Reviver"
   },
   "workmap": {
-    "message": "Mapa de trabalho"
+    "message": "Mapa"
   },
   "any": {
     "message": "Qualquer"
   },
   "onlyworkdelta": {
-    "message": "(S funciona se delta ativo)"
+    "message": "(Só Funciona se Estiver Delta Ativo)"
   },
   "boxsettings": {
-    "message": "configuraes de box"
+    "message": "Configurações de Box"
   },
   "bonusbox": {
-    "message": "Bonus box"
+    "message": "Caixa Bônus"
   },
   "materials": {
     "message": "Materiais"
   },
   "cargobox": {
-    "message": "Cargo box"
+    "message": "Caixa Cargo"
   },
   "greenorgoldbooty": {
     "message": "Caixas Verde | Caixas Douradas"
   },
   "redbooty": {
-    "message": "Caixas vermelhas"
+    "message": "Caixas Vermelhas"
   },
   "bluebooty": {
-    "message": "Caixas azuis"
+    "message": "Caixas Azuis"
   },
   "masquebooty": {
     "message": "Caixas Apocalipse"
   },
   "collectboxwhencircle": {
-    "message": "Collect Box When Circle (Se delta ativo)"
+    "message": "Coletar Caixa Quando Estiver Circulando"
   },
   "target": {
     "message": "Alvo: "
@@ -150,58 +150,58 @@
     "message": "Escudo: "
   },
   "palladiumbot": {
-    "message": "Palladium Bot"
+    "message": "Bot de Palladium"
   },
   "moverandomly": {
-    "message": "Mover aleatoriamente"
+    "message": "Mover Aleatoriamente"
   },
   "killnpcs": {
     "message": "Matar NPCs"
   },
   "fleefromenemy": {
-    "message": "Fuja do inimigo"
+    "message": "Fugir de Inimigos"
   },
   "avoidattackednpc": {
-    "message": "Evite NPCs atacados <br> (no use com PET)"
+    "message": "Evite NPCs Atacados por outros <br> (não use com PET)"
   },
   "circle": {
-    "message": "Circulo"
+    "message": "Girar em Circulos"
   },
   "circleradius": {
-    "message": "Raio do crculo <span> (500px) </ span>"
+    "message": "Raio do Circulo <span> (500px) </ span>"
   },
   "dontcirclewhenhp": {
-    "message": "No circule quando a Vida <25%"
+    "message": "Não Circule Quando a Vida Estiver menor que <25%"
   },
   "repairwhenhp": {
-    "message": "Reparar quando a Vida <<span> (10%) </ span>"
+    "message": "Reparar quando a Vida estiver <span> (10%)</span>"
   },
   "jumpandreturn": {
-    "message": "Saltar e retornar"
+    "message": "Saltar e Retornar"
   },
   "autochangeconfig": {
-    "message": "Trocar automaticamente de configurao"
+    "message": "Trocar Automaticamente de Configuração"
   },
   "dodgethecbs": {
     "message": "Esquivar-se das Bases"
   },
   "resettarget": {
-    "message": "Redefinir alvo quando a HP <25%"
+    "message": "Redefinir alvo quando a HP estiver menor que <25%"
   },
   "savesettingsandenable": {
-    "message": "Salvar configuraes e Ativar atualizao"
+    "message": "Salvar configurações e Ativar atualização"
   },
   "attackdetails": {
-    "message": "Detalhes do ataque"
+    "message": "Detalhes do Alvo"
   },
   "general": {
     "message": "Geral"
   },
   "gghelper": {
-    "message": "Ajudante de GG"
+    "message": "Ajudante de Galaxy Gate"
   },
   "ggbot": {
-    "message": "GG Bot (Testando)"
+    "message": "Galaxy Gate Bot (Em Teste)"
   },
   "jumpin": {
     "message": "Pular em"
@@ -210,72 +210,123 @@
     "message": "Minimapa"
   },
   "excludenpcto": {
-    "message": "Excluir NPC para atacar"
+    "message": "Excluir NPCs para Atacar"
   },
   "statistic": {
-    "message": "Estatsticas"
+    "message": "Estatísticas"
   },
   "startat": {
-    "message": "Comea s: "
+    "message": "Começou Ás: "
   },
   "credits": {
-    "message": "Crditos: "
+    "message": "Créditos: "
   },
   "uridium": {
     "message": "Uridium: "
   },
   "ggenergy": {
-    "message": "Energia Extra: "
+    "message": "Energía Extra: "
   },
   "ammo": {
-    "message": "Munio: "
+    "message": "Munição: "
   },
   "experiencie": {
-    "message": "Experincia: "
+    "message": "Experiência: "
   },
   "honor": {
     "message": "Honra: "
   },
   "rank": {
-    "message": "Pontos de rank: "
+    "message": "Pontos de Rank: "
   },
   "death": {
-    "message": "Contagem de mortes: "
+    "message": "Contagem de Mortes: "
   },
   "speed": {
     "message": "Velocidade: "
   },
   "runtime": {
-    "message": "Tempo de execuo: "
+    "message": "Tempo de execução: "
   },
   "reset": {
-    "message": "Resetar"
+    "message": "Reiniciar Estatísticas"
   },
   "shipsettings": {
-    "message": "Ship settings"
+    "message": "Configurações da Nave"
   },
   "changedroneformation": {
-    "message": "Change Drone Formation"
+    "message": "Trocar de Formação de drone"
   },
   "attackformationslot": {
-    "message": "Attack Formation Slot"
+    "message": "Slot da Formação de Ataque"
   },
   "flyingformationslot": {
-    "message": "Flying Formation Slot"
+    "message": "Slot da Formação de Velocidade"
   },
   "droneformations": {
-    "message": "Drone Formations(BETA)"
+    "message": "Formação de Drone(BETA)"
   },
   "shiphability": {
-    "message": "Ship Hability (BETA)"
+    "message": "Habilidade de Nave(BETA)"
   },
   "usehability": {
-    "message": "Use Hability"
+    "message": "Usar Habilidade"
   },
   "habilityslot": {
-    "message": "Hability slot"
+    "message": "Slot da Habilidade"
   },
   "refreshsettings": {
-    "message": "Refresh settings"
+    "message": "Configurações de Atualização"
+  },
+  "slotsAmmunition": {
+    "message": "Configuração de Munição"
+  },
+  "autochangeammunition": {
+    "message": "Trocar Automaticamente de Munição"
+  },
+  "piratebot": {
+    "message": "Bot de Piratas (5-2) (Portal da Esquerda)"
+  },
+  "cubibot": {
+    "message": "Bot de Protegit"
+  },
+  "gatestonpc": {
+    "message": "NPCs no Portal"
+  },
+  "x1Slot": {
+    "message": "Slot do x1"
+  },
+  "x2Slot": {
+    "message": "Slot do x2"
+  },
+  "x3Slot": {
+    "message": "Slot do x3"
+  },
+  "x4Slot": {
+    "message": "Slot do x4"
+  },
+  "SABSlot": {
+    "message": "Slot do SAB"
+  },
+  "npcname": {
+    "message": "Nome do NPC"
+  },
+  "npcrange": {
+    "message": "Alcance do NPC"
+  },
+  "npcammo": {
+    "message": "Munição"
+  },
+  "npcpriority": {
+    "message": "Prioridade"
+  },
+  "npclist": {
+    "message": "NPC List"
+  },
+  "generalsettings": {
+    "message": "General settings"
+  },
+  "stopafterxminutes": {
+    "message": "Stop after x minutes (0 = No Stop)"
   }
 }

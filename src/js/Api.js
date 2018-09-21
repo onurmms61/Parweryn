@@ -25,6 +25,7 @@ class Api {
     this.changeFormationTime = $.now();
     this.formation = -1;
     this.ammunition = -1;
+    
   }
   
   useHability(){
@@ -312,7 +313,7 @@ class Api {
     }
   }
   
-  prodegitgörev() {
+  protegitmode() {
    for (let property in this.ships) {
       let ship = this.ships[property];
       if (ship && (ship.name == "-=[ Cubikon ]=-") && ship.distanceTo(window.hero.position) < 1000) {
@@ -333,41 +334,7 @@ class Api {
       }
     }
   }
-  tallinfix() {
-   for (let property in this.ships) {
-      let ship = this.ships[property];
-      if (ship && (ship.name == "-=[ Kristallin ]=-") && ship.distanceTo(window.hero.position) < 5000) {
-        let shipsCount = this.countNpcAroundByType("-=[ Kristallin ]=-", 5000);
-        if (shipsCount > 2) { 
-          window.settings.setNpc(ship.name, true);
-          if (this.targetShip == ship){
-            this.resetTarget("enemy");
-          }
-        } else {
-          window.settings.setNpc(ship.name, false);
-          this.targetShip = ship;
-        }
-      }
-    }
-  }
-  bostallinfix() {
-   for (let property in this.ships) {
-      let ship = this.ships[property];
-      if (ship && (ship.name == "-=[ Boss Kristallin ]=-") && ship.distanceTo(window.hero.position) < 5000) {
-        let shipsCount = this.countNpcAroundByType("-=[ Boss Kristallin ]=-", 5000);
-        if (shipsCount > 1) { 
-          window.settings.setNpc(ship.name, true);
-          if (this.targetShip == ship){
-            this.resetTarget("enemy");
-          }
-        } else {
-          window.settings.setNpc(ship.name, false);
-          this.targetShip = ship;
-        }
-      }
-    }
-  }
-
+  
   countNpcAroundByType(type, distance){
     let shipsCount = Object.keys(this.ships).length;
     let shipsAround = 0;
@@ -461,8 +428,6 @@ class Api {
       ship.update();
       if (ship.isNpc) {
 	    let npcdata =  window.settings.getNpc(ship.name);
-	    console.log(ship.name);
-	    console.log(npcdata);
 	    let priority = npcdata["priority"];
         if (priority >= minPriority) {
 	      let dist = ship.distanceTo(window.hero.position);

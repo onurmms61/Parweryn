@@ -106,6 +106,56 @@
         </td>
       </tr>
       <tr>
+        <td>
+          <input type="checkbox" id="useHabilityAegis" name="useHabilityAegis">
+          <label for="useHabilityAegis"><span data-resource="useHabilityAegis">useHabilityAegis</span></label>
+        </td>
+        <td colspan="1">
+          <label for="HabilitySlotAegisHP"><span data-resource="HabilitySlotAegisHP">Hability Slot Aegis HP</span>: </label>
+          <input type="number" id="HabilitySlotAegisHP" min="0" max="10" value="0">
+        </td>
+        <td colspan="1">
+          <label for="HabilitySlotAegisSHD"><span data-resource="HabilitySlotAegisSHD">Hability Slot Aegis SHD</span>: </label>
+          <input type="number" id="HabilitySlotAegisSHD" min="0" max="10" value="0">
+        </td>
+        <td colspan="1">
+          <label for="HabilitySlotAegisBeacon"><span data-resource="HabilitySlotAegisBeacon">Hability Slot Aegis Beacon HP</span>: </label>
+          <input type="number" id="HabilitySlotAegisBeacon" min="0" max="10" value="0">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><b><span data-resource="slotsAmmunition">Slots of ammunition</span>:</b></td>
+        <td>
+        <input type="checkbox" id="changeAmmunition" name="changeAmmunition">
+          <label for="changeAmmunition"><span data-resource="autochangeammunition">Auto Change Ammunition</span></label>
+        </td>
+        <td>
+          <label for="x1Slot"><span data-resource="x1Slot">Slot X1</span></label>
+          <input type="number" id="x1Slot" min="0" max="10" value="0">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="x2Slot"><span data-resource="x2Slot">Slot X2</span></label>
+          <input type="number" id="x2Slot" min="0" max="10" value="0">
+        </td>
+        <td>
+          <label for="x3Slot"><span data-resource="x3Slot">Slot X3</span></label>
+          <input type="number" id="x3Slot" min="0" max="10" value="0">
+        </td>
+        <td>
+          <label for="x4Slot"><span data-resource="x4Slot">Slot X4</span></label>
+          <input type="number" id="x4Slot" min="0" max="10" value="0">
+        </td>
+        <td>
+          <label for="sabSlot"><span data-resource="SABSlot">Slot SAB</span></label>
+          <input type="number" id="sabSlot" min="0" max="10" value="0">
+        </td>
+      </tr>
+      <tr>
+        <th class="settingsTitle" colspan="4"><center><span data-resource="generalsettings">General settings</span></center></th>
+      </tr>
+      <tr>
         <td colspan="2">
           <b><label for="reviveType"><span data-resource="reviveat">Revive at</span>: </label></b>
           <select id="reviveType">
@@ -153,35 +203,14 @@
         </td>
       </tr>
       <tr>
-        <td colspan="2"><b><span data-resource="slotsAmmunition">Slots of ammunition</span>:</b></td>
-        <td>
-        <input type="checkbox" id="changeAmmunition" name="changeAmmunition">
-          <label for="changeAmmunition"><span data-resource="autochangeammunition">Auto Change Ammunition</span></label>
-        </td>
-        <td>
-          <label for="x1Slot"><span data-resource="x1Slot">Slot X1</span></label>
-          <input type="number" id="x1Slot" min="0" max="10" value="0">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="x2Slot"><span data-resource="x2Slot">Slot X2</span></label>
-          <input type="number" id="x2Slot" min="0" max="10" value="0">
-        </td>
-        <td>
-          <label for="x3Slot"><span data-resource="x3Slot">Slot X3</span></label>
-          <input type="number" id="x3Slot" min="0" max="10" value="0">
-        </td>
-        <td>
-          <label for="x4Slot"><span data-resource="x4Slot">Slot X4</span></label>
-          <input type="number" id="x4Slot" min="0" max="10" value="0">
-        </td>
-        <td>
-          <label for="sabSlot"><span data-resource="SABSlot">Slot SAB</span></label>
-          <input type="number" id="sabSlot" min="0" max="10" value="0">
-        </td>
-      </tr>
-      <tr>
+        <td colspan="2"><label for="stopafterxminutes"><span data-resource=stopafterxminutes>Stop after x minutes (0 = No Stop)</span>
+            <input type="number" id="stopafterxminutes" min="0" max="10080" step="5" value="0"></label></td>
+      
+      
+          <td colspan="2"><label for="waitafterRepair"><span data-resource=waitafterRepair>Wait after repair x minutes (0 = No Stop)</span>
+            <input type="number" id="waitafterRepair" min="0" max="120"  value="0"></label></td>
+       </tr>
+       <tr>
         <th class="settingsTitle" colspan="4"><center><span data-resource="refreshsettings">Refresh page function settings</span></center></th>
       </tr>
       <tr>

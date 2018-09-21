@@ -54,12 +54,12 @@ class GeneralSettingsWindow {
           window.settings.avoidAttackedNpcs = this.checked;
         }
       },
-	  {
+      {
         name: 'gatestonpc',
-          labelText: chrome.i18n.getMessage("gatestonpc"),
-          appendTo: this.botSettingsWindow,
-          event: function () {
-			window.settings.gatestonpc = this.checked;
+        labelText: chrome.i18n.getMessage("gatestonpc"),
+        appendTo: this.botSettingsWindow,
+        event: function () {
+         window.settings.gatestonpc = this.checked;
         }
       },
       {
@@ -68,6 +68,23 @@ class GeneralSettingsWindow {
         appendTo: this.botSettingsWindow,
         event: function () {
           window.settings.circleNpc = this.checked;
+        }
+      },
+      {
+        name: 'npcCircleRadius',
+        labelText: chrome.i18n.getMessage("circleradius"),
+        type: 'range',
+        appendTo: this.botSettingsWindow,
+        labelBefore: true,
+        attrs: {
+          min: 1,
+          max: 800,
+          step: 1,
+          value: 500,
+        },
+        event: function (ev) {
+          window.settings.npcCircleRadius = this.value;
+          $('span:last-child', this.label).text(' (' + this.value + 'px)');
         }
       },
       {

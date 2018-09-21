@@ -283,5 +283,56 @@
   },
   "autochangeammunition": {
     "message": "Auto cambiar municion"
+  },
+  "piratebot": {
+    "message": "5-2 pirata (puerta izquierda)"
+  },
+  "cubibot": {
+    "message": "Protegit Bot"
+  },
+  "gatestonpc": {
+    "message": "NPCs en portal"
+  },
+  "x1Slot": {
+    "message": "Slot x1"
+  },
+  "x2Slot": {
+    "message": "Slot x2"
+  },
+  "x3Slot": {
+    "message": "Slot x3"
+  },
+  "x4Slot": {
+    "message": "Slot x4"
+  },
+  "SABSlot": {
+    "message": "Slot SAB"
+  },
+  "npcname": {
+    "message": "Nombre NPC"
+  },
+  "npcrange": {
+    "message": "Rango"
+  },
+  "npcammo": {
+    "message": "Munición"
+  },
+  "npcpriority": {
+    "message": "Prioridad"
+  },
+  "piratebotsag": {
+    "message": "5-2 Bot Pirata Detecha"
+  },
+  "npclist": {
+    "message": "Lista NPC"
+  },
+  "generalsettings": {
+    "message": "Configuración General"
+  },
+  "stopafterxminutes": {
+    "message": "Parar despues de x minutos (0 = No parar)"
+  },
+  "waitafterRepair" : {
+    "message": "Parar despues de que la nave sea destruida (0 = No parar)"
   }
 }

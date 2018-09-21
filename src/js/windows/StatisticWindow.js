@@ -90,7 +90,7 @@ class StatisticWindow {
       },
       {
         name: 'palladium',
-        labelText: "Palladium: ",
+        labelText: "Materials: ",
         spanText: '0',
         appendTo: this.botStatisticWindow
       }
@@ -180,7 +180,6 @@ class StatisticWindow {
       if (this.connected) {
 
         $('span:last-child', this.runtime).text(TimeHelper.diff(this.stats.startTime));
-
         $('span:last-child', this.speed).text(this.speedFormat(this.stats.uridium, this.stats.startTime));
       }
     });
@@ -190,6 +189,7 @@ class StatisticWindow {
 
     let timeMinutes = TimeHelper.totalMinutes(startTime);
     let curFormat = window.globalSettings.speedFormat;
+    window.settings.runtime = timeMinutes;
 
     let formats = {
       min: (uri / timeMinutes).toFixed(2),

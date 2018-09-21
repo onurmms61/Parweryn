@@ -17,6 +17,11 @@ class HeroDiedHandler {
            } else if (window.globalSettings.reviveType == 2) {
              Injector.injectScript("document.getElementById('preloader').revive(2);");
            }
+          window.settings.waitingAfterDead = true;
+          setTimeout(function(){
+          window.settings.waitingAfterDead = false;
+          },window.globalSettings.waitafterRepair*1000*60);
+           
            window.reviveCount++;
            a.isRepairing = true;
            let event = new CustomEvent("deathCounter", {

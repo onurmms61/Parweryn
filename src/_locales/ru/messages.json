@@ -311,7 +311,25 @@
      "npcpriority": {
     "message": "Приоритет:"
   },
+     "piratebot": {
+    "message": "Пират бот"
+  },
+     "cubibot": {
+    "message": "Куб бот"
+  },
+     "gatestonpc": {
+    "message": "WTF Functiot"
+  },
+     "botmodes": {
+    "message": "Режимы ботов"
+  },
   "autochangeammunition": {
     "message": "Автоматическая смена амуниции"
+  },
+  "generalsettings": {
+    "message": "General settings"
+  },
+  "stopafterxminutes": {
+    "message": "Stop after x minutes (0 = No Stop)"
   }
 }

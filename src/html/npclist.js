@@ -68,10 +68,84 @@
 	"-={ demaNeR Freighter }=-",
 	"-=[ Hitac 2.0 ]=-",
 	"-=[ Hitac-Minion ]=-"
-  ];
+  ]
+  let knownCirceList = [
+	"450",
+	"500",
+	"500",
+	"450",
+	"536",
+	"500",
+	"530",
+	"500",
+	"610",
+	"575",
+	"575",
+	"600",
+	"600",
+	"525",
+	"525",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"450",
+	"450",
+	"520",
+	"500",
+	"575",
+	"575",
+	"570",
+	"625",
+	"575",
+	"615",
+	"600",
+	"500",
+	"500",
+	"580",
+	"500",
+	"500",
+	"575",
+	"600",
+	"600",
+	"580",
+	"625",
+	"580",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500",
+	"500"
+	];
+
+
+
 for (i = 0; i < knownNpcList.length; i++) { 
   document.write('<tr><td><input style="width: 100%" type="text" id="name'+i+'" value="'+knownNpcList[i]+'" readonly></input></td>');
-  document.write('<td><input type="number" id="range'+i+'" min="300" max="900" value="500"></td>');
+  document.write('<td><input type="number" id="range'+i+'" min="300" max="900" value="'+knownCirceList[i]+'"></td>');
   document.write('<td><select id="ammo'+i+'"><option value="1">X1</option><option value="2">X2</option><option value="3">X3</option><option value="4">X4</option><option value="11">X1 + SAB</option><option value="21">X2 + SAB</option></select></td>');
   document.write('<td><select id="priority'+i+'"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="0">No attack</option></select></td>');
   document.write('</tr>');

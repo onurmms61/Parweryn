@@ -1,10 +1,9 @@
 class Settings {
   constructor(pause, 
-    palladium, refresh, moveRandomly, killNpcs, fleeFromEnemy, jumpFromEnemy, dodgeTheCbs, avoidAttackedNpcs, circleNpc, dontCircleWhenHpBelow25Percent, resetTargetWhenHpBelow25Percent, repairWhenHpIsLowerThanPercent,
-
+    refresh, moveRandomly, killNpcs, fleeFromEnemy, jumpFromEnemy, dodgeTheCbs, avoidAttackedNpcs, circleNpc, dontCircleWhenHpBelow25Percent, resetTargetWhenHpBelow25Percent, repairWhenHpIsLowerThanPercent, gatestonpc,
     ggbot, alpha, beta, gamma, delta, epsilon, zeta, kappa, lambda, kronos, hades, kuiper,
-
-    lockNpcs, lockPlayers, autoAttack, autoAttackNpcs) 
+    lockNpcs, lockPlayers, autoAttack, autoAttackNpcs,
+    palladium, piratebot, cubibot, waitingAfterDead) 
   {
     this._pause = pause === true;
 
@@ -17,9 +16,12 @@ class Settings {
     this._dodgeTheCbs = dodgeTheCbs === true;
     this._avoidAttackedNpcs = avoidAttackedNpcs === true;
     this._circleNpc = circleNpc === true;
+    this.npcCircleRadius = 500;
     this._dontCircleWhenHpBelow25Percent = dontCircleWhenHpBelow25Percent === true;
     this._resetTargetWhenHpBelow25Percent = resetTargetWhenHpBelow25Percent === true;
     this._repairWhenHpIsLowerThanPercent = repairWhenHpIsLowerThanPercent;
+    this._gatestonpc = gatestonpc === true;
+    this._waitingAfterDead = waitingAfterDead ===true;
 
     this._ggbot = ggbot === true;
     this._alpha = alpha === true;
@@ -39,7 +41,9 @@ class Settings {
     this._autoAttack = autoAttack === true;
 
     this._autoAttackNpcs = autoAttackNpcs === true;
-
+    
+    this._piratebot = piratebot === true;
+    this._cubibot = cubibot === true;
 
     this._npcs = new Array();
   }
@@ -146,6 +150,14 @@ class Settings {
 
   set repairWhenHpIsLowerThanPercent(value) {
     this._repairWhenHpIsLowerThanPercent = value;
+  }
+  
+  get gatestonpc() {
+	return this._gatestonpc;
+  }
+
+  set gatestonpc(value) {
+    this._gatestonpc = value;
   }
 
   get ggbot() {
@@ -267,9 +279,46 @@ class Settings {
   set autoAttack(value) {
     this._autoAttack = value === true;
   }
+  
+  get cubibot() {
+    return this._cubibot;
+  }
+
+  set cubibot(value) {
+    this._cubibot = value === true;
+  }
+  
+  get piratebot() {
+    return this._piratebot;
+  }
+
+  set piratebot(value) {
+    this._piratebot = value === true;
+  }
+  
+  get npcs() {
+	return this._npcs;
+  }
+  
+  set npcs(value) {
+	this._npcs = value;
+  }
+
+  get waitingAfterDead(){
+    return this._waitingAfterDead;
+  }
+
+  set waitingAfterDead(value){
+    this._waitingAfterDead = value === true;
+  }
 
   setNpc(name,val) {
-	this._npcs[name]["priority"] = val;
+	if (this._npcs.hasOwnProperty(name)){
+	  this._npcs[name]["priority"] = val;
+	} else {
+      var npcdata = {"name": name, "range": this.npcCircleRadius, "ammo": "1", "priority": val};
+	  this._npcs[name] = val;
+	}
   }
   
   updateNpc(name, val) {
@@ -280,13 +329,9 @@ class Settings {
 	if (this._npcs.hasOwnProperty(name)){
 	  return this._npcs[name];
 	} else {
-      var npcdata = {"name": name, "range": "500", "ammo": "1", "priority": "1"};
+      var npcdata = {"name": name, "range": this.npcCircleRadius, "ammo": "1", "priority": "1"};
 	  return npcdata;
 	}
-  }
-  
-  get npcs() {
-	return this._npcs;
   }
   
   getPriority(name){

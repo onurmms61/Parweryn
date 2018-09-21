@@ -51,7 +51,7 @@
     "message": "Delta ozelliklerini aktif et. Bazilarinda bug olabilir."
   },
   "palladiumlogic": {
-    "message": "Palladium botu (Sadece delta ozelligi acikken calisir.)"
+    "message": "Palladium botu"
   },
   "shipconfigs": {
     "message": "Gemi Konfileri"
@@ -81,7 +81,8 @@
     "message": "Kestirmeyecegin npcleri tekrar ayarla"
   },
   "refreshtoreconnect": {
-    "message": "Refresh page when disconnected"
+    "message": "Baglantı kesildiginde sayfayı yenile
+"
   },
   "clearsettings": {
     "message": "Uygulanmis ayarlari temizle (Ozelligi yenile)"
@@ -90,10 +91,10 @@
     "message": "Dogus yeri"
   },
   "base": {
-    "message": "Ana us"
+    "message": "hangar"
   },
   "gate": {
-    "message": "Kapi"
+    "message": "portal"
   },
   "spot": {
     "message": "Herhangi biryer"
@@ -138,7 +139,7 @@
     "message": "Apocalyptic kutusu"
   },
   "collectboxwhencircle": {
-    "message": "Daire cizerken kutulari topla(Sadece delta acikken)"
+    "message": "Daire cizerken kutulari topla"
   },
   "target": {
     "message": "Hedef: "
@@ -156,13 +157,13 @@
     "message": "Rastgele Hareket Et"
   },
   "killnpcs": {
-    "message": "NPCleri Kes"
+    "message": "Yaratıkları Kes"
   },
   "fleefromenemy": {
     "message": "Dusmandan kac"
   },
   "avoidattackednpc": {
-    "message": "NPC saldirilarindan kacin<br>(PET ile kullanmayin)"
+    "message": "Baskasının yaratıgına sıkma<br>(PET ile kullanmayin)"
   },
   "circle": {
     "message": "Daire"
@@ -194,7 +195,7 @@
   "attackdetails": {
     "message": "Saldiri Detaylari"
   },
-  "general": {
+  "generalsettings": {
     "message": "Genel Ayarlar"
   },
   "gghelper": {
@@ -228,7 +229,7 @@
     "message": "GG Enerjisi: "
   },
   "ammo": {
-    "message": "Mermi: "
+    "message": "Lazer: "
   },
   "experiencie": {
     "message": "Tecrube: "
@@ -273,37 +274,69 @@
     "message": "Özelliği Aktif Et"
   },
   "habilityslot": {
-    "message": "Özellik Yeri"
+    "message": "Özellik Slotu"
   },
   "refreshsettings": {
     "message": "Ayarları Sıfırla"
   },
-  "lockNpc": {
-    "message": "NPCleri Tut (x) "
-  },
-  "lockPlayers": {
-    "message": "İnsanları Tut (z) "
-  },
-  "korsanbot": {
-    "message": "5-2 korsan(sol kapıya bırakın) "
-  },
-  "korsanbotkisim": {
-    "message": "Korsan Bot "
-  },
-  "gatestonpc": {
-    "message": "Npcs Kapıya Çek Kes "
-  },
-  "cubibot": {
-    "message": "Prodegit Botudur(elmas var ise elmasta kullanın "
-  },
   "slotsAmmunition": {
-    "message": "Lazer Yeri "
+    "message": "lazer ayarlari"
   },
   "autochangeammunition": {
-    "message": "Lazer Değiştirmeyi Aktif Et"
+    "message": "otomatik cephane degistir"
   },
-  "korsanbotaktif": {
-    "message": "5-2 korsan(sol kapıya bırakın)  "
+  "piratebot": {
+    "message": "5-2 korsan bot - sol portal"
+  },
+  "cubibot": {
+    "message": "Protegit Bot"
+  },
+  "gatestonpc": {
+    "message": "yaratıgı portala getir"
+  },
+  "x1Slot": {
+    "message": "Slot x1: "
+  },
+  "x2Slot": {
+    "message": "Slot x2: "
+  },
+  "x3Slot": {
+    "message": "Slot x3: "
+  },
+  "x4Slot": {
+    "message": "Slot x4: "
+  },
+  "SABSlot": {
+    "message": "Slot SAB: "
+  },
+  "npcname": {
+    "message": "Yaratık ismi"
+  },
+  "npcrange": {
+    "message": "menzil"
+  },
+  "npcammo": {
+    "message": "cephane"
+  },
+  "npcpriority": {
+    "message": "oncelik"
+  },
+  "Stopafterxminutes": {
+   "message": "x dakika sonra dur (0 = Durma Yok)"
+  },
+  "waitafterRepair": {
+   "message": "Onarımdan sonra bekleyiniz x dakika(0 = Durmak yok)"
+  },
+  "useHabilityAegis": {
+   "message": "Yetenek aegis kullan"
+  },
+  "HabilitySlotAegisHP": {
+    "message": "aegis HP yetenegi"
+  },
+  "HabilitySlotAegisSHD": {
+    "message":  "Aegis SHD yetenegi"
+  },
+  "HabilitySlotAegisBeacon": {
+    "message": "Aegis samandıra yetenegi"
   }
-  
 }

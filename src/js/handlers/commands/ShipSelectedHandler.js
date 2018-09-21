@@ -6,7 +6,6 @@ class ShipSelectedHandler {
   constructor() {
     this._handler = function (e, a) {
       let parsedJson = JSON.parse(e.detail);
-
       let ship = a.ships[parsedJson.userId];
       ship.maxHp = parsedJson[Variables.selectMaxHp]; //
       ship.maxShd = parsedJson[Variables.selectMaxShd]; // 
